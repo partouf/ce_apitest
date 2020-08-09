@@ -1,0 +1,33 @@
+{
+  "name": "ce_apitest",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc",
+    "test-local": "cross-env CEURL=http://127.0.0.1:10240 mocha --recursive ./test",
+    "test-prod": "cross-env CEURL=https://godbolt.org mocha --recursive ./test",
+    "test-beta": "cross-env CEURL=https://godbolt.org/beta mocha --recursive ./test",
+    "test-staging": "cross-env CEURL=https://godbolt.org/staging mocha --recursive ./test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/partouf/ce_apitest.git"
+  },
+  "author": "",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/partouf/ce_apitest/issues"
+  },
+  "homepage": "https://github.com/partouf/ce_apitest#readme",
+  "dependencies": {
+    "@partouf/compilerexplorer-api": "0.0.5",
+    "@types/chai": "^4.2.12",
+    "@types/mocha": "^8.0.1",
+    "chai": "^4.2.0",
+    "cross-env": "^7.0.2",
+    "mocha": "^8.1.1",
+    "types": "^0.1.1",
+    "typescript": "^3.9.7"
+  }
+}
