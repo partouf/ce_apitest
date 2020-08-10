@@ -1,5 +1,9 @@
 import { Api, ICompilationResult, APIType, ICompiler, ICompilerFilters } from "@partouf/compilerexplorer-api";
 
+export function pathScrubber(data: string) {
+    return (data || '').replace(/\"\.?\/.*\/.*\"/g, '"**Scrubbed-path**"');
+};
+
 export class TestConfig {
     public jsonApi?: Api;
     public textApi?: Api;

@@ -1,0 +1,84 @@
+{
+  "asm": [
+    {
+      "labels": [],
+      "source": null,
+      "text": "_Z6squarei:"
+    },
+    {
+      "labels": [],
+      "source": {
+        "file": null,
+        "line": 1
+      },
+      "text": "        push    rbp"
+    },
+    {
+      "labels": [],
+      "source": {
+        "file": null,
+        "line": 1
+      },
+      "text": "        mov     rbp, rsp"
+    },
+    {
+      "labels": [],
+      "source": {
+        "file": null,
+        "line": 1
+      },
+      "text": "        mov     DWORD PTR [rbp-4], edi"
+    },
+    {
+      "labels": [],
+      "source": {
+        "file": null,
+        "line": 2
+      },
+      "text": "        mov     eax, DWORD PTR [rbp-4]"
+    },
+    {
+      "labels": [],
+      "source": {
+        "file": null,
+        "line": 2
+      },
+      "text": "        imul    eax, eax"
+    },
+    {
+      "labels": [],
+      "source": {
+        "file": null,
+        "line": 3
+      },
+      "text": "        pop     rbp"
+    },
+    {
+      "labels": [],
+      "source": {
+        "file": null,
+        "line": 3
+      },
+      "text": "        ret"
+    }
+  ],
+  "asmSize": 2703,
+  "code": 0,
+  "compilationOptions": [
+    "-g",
+    "-o",
+    "**Scrubbed-path**",
+    "-masm=intel",
+    "-S",
+    "-fdiagnostics-color=always",
+    "**Scrubbed-path**"
+  ],
+  "inputFilename": "**Scrubbed-path**",
+  "labelDefinitions": {
+    "_Z6squarei": 1
+  },
+  "okToCache": true,
+  "stderr": [],
+  "stdout": [],
+  "tools": []
+}

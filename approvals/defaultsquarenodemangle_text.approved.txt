@@ -1,0 +1,38 @@
+{
+  "asm": [
+    {
+      "text": "# Compilation provided by Compiler Explorer at https://godbolt.org/"
+    },
+    {
+      "text": "_Z6squarei:"
+    },
+    {
+      "text": "        push    rbp"
+    },
+    {
+      "text": "        mov     rbp, rsp"
+    },
+    {
+      "text": "        mov     DWORD PTR [rbp-4], edi"
+    },
+    {
+      "text": "        mov     eax, DWORD PTR [rbp-4]"
+    },
+    {
+      "text": "        imul    eax, eax"
+    },
+    {
+      "text": "        pop     rbp"
+    },
+    {
+      "text": "        ret"
+    },
+    {
+      "text": ""
+    }
+  ],
+  "code": 0,
+  "didExecute": false,
+  "stderr": [],
+  "stdout": []
+}
