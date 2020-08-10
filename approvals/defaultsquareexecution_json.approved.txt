@@ -1,0 +1,255 @@
+{
+  "asm": [
+    {
+      "labels": [],
+      "source": null,
+      "text": "_Z6squarei:"
+    },
+    {
+      "labels": [],
+      "source": {
+        "file": null,
+        "line": 2
+      },
+      "text": "        mov     eax, edi"
+    },
+    {
+      "labels": [],
+      "source": {
+        "file": null,
+        "line": 2
+      },
+      "text": "        imul    eax, edi"
+    },
+    {
+      "labels": [],
+      "source": {
+        "file": null,
+        "line": 3
+      },
+      "text": "        ret"
+    },
+    {
+      "labels": [],
+      "source": null,
+      "text": ".LC0:"
+    },
+    {
+      "labels": [],
+      "source": null,
+      "text": "        .string \"Hello, World\\n\""
+    },
+    {
+      "labels": [],
+      "source": null,
+      "text": "main:"
+    },
+    {
+      "labels": [],
+      "source": {
+        "file": null,
+        "line": 7
+      },
+      "text": "        push    rbx"
+    },
+    {
+      "labels": [
+        {
+          "name": ".LC0",
+          "range": {
+            "endCol": 38,
+            "startCol": 34
+          }
+        }
+      ],
+      "source": {
+        "file": null,
+        "line": 8
+      },
+      "text": "        mov     esi, OFFSET FLAT:.LC0"
+    },
+    {
+      "labels": [],
+      "source": {
+        "file": null,
+        "line": 7
+      },
+      "text": "        mov     ebx, edi"
+    },
+    {
+      "labels": [],
+      "source": {
+        "file": null,
+        "line": 8
+      },
+      "text": "        mov     edi, OFFSET FLAT:_ZSt4cout"
+    },
+    {
+      "labels": [],
+      "source": {
+        "file": null,
+        "line": 8
+      },
+      "text": "        call    _ZStlsISt11char_traitsIcEERSt13basic_ostreamIcT_ES5_PKc"
+    },
+    {
+      "labels": [],
+      "source": {
+        "file": null,
+        "line": 10
+      },
+      "text": "        lea     eax, [rbx+1]"
+    },
+    {
+      "labels": [],
+      "source": {
+        "file": null,
+        "line": 11
+      },
+      "text": "        pop     rbx"
+    },
+    {
+      "labels": [],
+      "source": {
+        "file": null,
+        "line": 2
+      },
+      "text": "        imul    eax, eax"
+    },
+    {
+      "labels": [],
+      "source": {
+        "file": null,
+        "line": 11
+      },
+      "text": "        ret"
+    },
+    {
+      "labels": [],
+      "source": null,
+      "text": "_GLOBAL__sub_I__Z6squarei:"
+    },
+    {
+      "labels": [],
+      "source": {
+        "file": null,
+        "line": 11
+      },
+      "text": "        sub     rsp, 8"
+    },
+    {
+      "labels": [],
+      "source": {
+        "file": "**Scrubbed-path**",
+        "line": 74
+      },
+      "text": "        mov     edi, OFFSET FLAT:_ZStL8__ioinit"
+    },
+    {
+      "labels": [],
+      "source": {
+        "file": "**Scrubbed-path**",
+        "line": 74
+      },
+      "text": "        call    _ZNSt8ios_base4InitC1Ev"
+    },
+    {
+      "labels": [],
+      "source": {
+        "file": "**Scrubbed-path**",
+        "line": 74
+      },
+      "text": "        mov     edx, OFFSET FLAT:__dso_handle"
+    },
+    {
+      "labels": [],
+      "source": {
+        "file": "**Scrubbed-path**",
+        "line": 74
+      },
+      "text": "        mov     esi, OFFSET FLAT:_ZStL8__ioinit"
+    },
+    {
+      "labels": [],
+      "source": {
+        "file": "**Scrubbed-path**",
+        "line": 74
+      },
+      "text": "        mov     edi, OFFSET FLAT:_ZNSt8ios_base4InitD1Ev"
+    },
+    {
+      "labels": [],
+      "source": {
+        "file": null,
+        "line": 11
+      },
+      "text": "        add     rsp, 8"
+    },
+    {
+      "labels": [],
+      "source": {
+        "file": "**Scrubbed-path**",
+        "line": 74
+      },
+      "text": "        jmp     __cxa_atexit"
+    }
+  ],
+  "asmSize": 390688,
+  "code": 0,
+  "compilationOptions": [
+    "-g",
+    "-o",
+    "**Scrubbed-path**",
+    "-masm=intel",
+    "-S",
+    "-fdiagnostics-color=always",
+    "-O3",
+    "-std=c++2a",
+    "**Scrubbed-path**"
+  ],
+  "execResult": {
+    "buildResult": {
+      "code": 0,
+      "compilationOptions": [
+        "-g",
+        "-o",
+        "**Scrubbed-path**",
+        "-fdiagnostics-color=always",
+        "-L.",
+        "-Wl,-rpath,.",
+        -Wl,-rpath,**Scrubbed-path**,
+        -Wl,-rpath,**Scrubbed-path**,
+        -Wl,-rpath,**Scrubbed-path**,
+        "-O3",
+        "-std=c++2a",
+        "**Scrubbed-path**"
+      ],
+      "dirPath": "**Scrubbed-path**",
+      "executableFilename": "**Scrubbed-path**",
+      "inputFilename": "**Scrubbed-path**",
+      "okToCache": true,
+      "stderr": [],
+      "stdout": []
+    },
+    "code": 4,
+    "didExecute": true,
+    "okToCache": true,
+    "stderr": [],
+    "stdout": [
+      {
+        "text": "Hello, World"
+      }
+    ]
+  },
+  "inputFilename": "**Scrubbed-path**",
+  "labelDefinitions": {
+    ".LC0": 5,
+    "_GLOBAL__sub_I__Z6squarei": 17,
+    "_Z6squarei": 1,
+    "main": 7
+  },
+  "okToCache": true,
+  "stderr": [],
+  "stdout": [],
+  "tools": []
+}

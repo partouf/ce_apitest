@@ -1,0 +1,189 @@
+{
+  "asm": [],
+  "buildResult": {
+    "asm": [
+      {
+        "text": "# Compilation provided by Compiler Explorer at https://godbolt.org/"
+      },
+      {
+        "text": "_Z6squarei:"
+      },
+      {
+        "text": "        push    rbp"
+      },
+      {
+        "text": "        mov     rbp, rsp"
+      },
+      {
+        "text": "        mov     DWORD PTR [rbp-4], edi"
+      },
+      {
+        "text": "        mov     eax, DWORD PTR [rbp-4]"
+      },
+      {
+        "text": "        imul    eax, eax"
+      },
+      {
+        "text": "        pop     rbp"
+      },
+      {
+        "text": "        ret"
+      },
+      {
+        "text": ".LC0:"
+      },
+      {
+        "text": "        .string \"Hello, World\\n\""
+      },
+      {
+        "text": "main:"
+      },
+      {
+        "text": "        push    rbp"
+      },
+      {
+        "text": "        mov     rbp, rsp"
+      },
+      {
+        "text": "        sub     rsp, 16"
+      },
+      {
+        "text": "        mov     DWORD PTR [rbp-4], edi"
+      },
+      {
+        "text": "        mov     QWORD PTR [rbp-16], rsi"
+      },
+      {
+        "text": "        mov     esi, OFFSET FLAT:.LC0"
+      },
+      {
+        "text": "        mov     edi, OFFSET FLAT:_ZSt4cout"
+      },
+      {
+        "text": "        call    _ZStlsISt11char_traitsIcEERSt13basic_ostreamIcT_ES5_PKc"
+      },
+      {
+        "text": "        mov     eax, DWORD PTR [rbp-4]"
+      },
+      {
+        "text": "        add     eax, 1"
+      },
+      {
+        "text": "        mov     edi, eax"
+      },
+      {
+        "text": "        call    _Z6squarei"
+      },
+      {
+        "text": "        nop"
+      },
+      {
+        "text": "        leave"
+      },
+      {
+        "text": "        ret"
+      },
+      {
+        "text": "_Z41__static_initialization_and_destruction_0ii:"
+      },
+      {
+        "text": "        push    rbp"
+      },
+      {
+        "text": "        mov     rbp, rsp"
+      },
+      {
+        "text": "        sub     rsp, 16"
+      },
+      {
+        "text": "        mov     DWORD PTR [rbp-4], edi"
+      },
+      {
+        "text": "        mov     DWORD PTR [rbp-8], esi"
+      },
+      {
+        "text": "        cmp     DWORD PTR [rbp-4], 1"
+      },
+      {
+        "text": "        jne     .L7"
+      },
+      {
+        "text": "        cmp     DWORD PTR [rbp-8], 65535"
+      },
+      {
+        "text": "        jne     .L7"
+      },
+      {
+        "text": "        mov     edi, OFFSET FLAT:_ZStL8__ioinit"
+      },
+      {
+        "text": "        call    _ZNSt8ios_base4InitC1Ev"
+      },
+      {
+        "text": "        mov     edx, OFFSET FLAT:__dso_handle"
+      },
+      {
+        "text": "        mov     esi, OFFSET FLAT:_ZStL8__ioinit"
+      },
+      {
+        "text": "        mov     edi, OFFSET FLAT:_ZNSt8ios_base4InitD1Ev"
+      },
+      {
+        "text": "        call    __cxa_atexit"
+      },
+      {
+        "text": ".L7:"
+      },
+      {
+        "text": "        nop"
+      },
+      {
+        "text": "        leave"
+      },
+      {
+        "text": "        ret"
+      },
+      {
+        "text": "_GLOBAL__sub_I__Z6squarei:"
+      },
+      {
+        "text": "        push    rbp"
+      },
+      {
+        "text": "        mov     rbp, rsp"
+      },
+      {
+        "text": "        mov     esi, 65535"
+      },
+      {
+        "text": "        mov     edi, 1"
+      },
+      {
+        "text": "        call    _Z41__static_initialization_and_destruction_0ii"
+      },
+      {
+        "text": "        pop     rbp"
+      },
+      {
+        "text": "        ret"
+      },
+      {
+        "text": ""
+      }
+    ],
+    "code": 0,
+    "stderr": [],
+    "stdout": []
+  },
+  "code": 4,
+  "didExecute": true,
+  "stderr": [],
+  "stdout": [
+    {
+      "text": "Hello, World"
+    },
+    {
+      "text": ""
+    }
+  ]
+}

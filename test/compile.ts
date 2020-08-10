@@ -22,6 +22,7 @@ async function getDefaultSquareCompilation(): Promise<TrippleCompilationResult> 
 
     const filters = {
         binary: false,
+        execute: false,
         demangle: true,
         directives: true,
         intel: true,
@@ -42,6 +43,7 @@ async function getDefaultSquareNodemangleCompilation(): Promise<TrippleCompilati
 
     const filters = {
         binary: false,
+        execute: false,
         demangle: false,
         directives: true,
         intel: true,
@@ -51,6 +53,35 @@ async function getDefaultSquareNodemangleCompilation(): Promise<TrippleCompilati
     } as ICompilerFilters
     
     return doCompilation(source, filters);
+}
+
+async function getDefaultSquareExecution(): Promise<TrippleCompilationResult> {
+    const source =
+`int square(int num) {
+    return num * num;
+}
+
+#include <iostream>
+
+int main(int argc, char **argv) {
+    std::cout << "Hello, World\\n";
+
+    return square(argc + 1);
+}
+`;
+    
+    const filters = {
+        binary: false,
+        demangle: false,
+        directives: true,
+        execute: true,
+        intel: true,
+        labels: true,
+        commentOnly: true,
+        libraryCode: false,
+    } as ICompilerFilters
+
+    return doCompilation(source, filters, ['-O3', '-std=c++2a']);
 }
 
 function testCompilationSuccess(result: ICompilationResult) {
@@ -123,6 +154,19 @@ describe('Square example', async () => {
     it('approval 1', async () => {
         const testname = 'defaultsquarenodemangle';
         const results = await findOrCreateCompilationByName(testname, getDefaultSquareNodemangleCompilation);
+        
+        if (results.jsonResult) delete (results.jsonResult as any)['popularArguments'];
+
+        approvals.verifyAsJSONAndScrub(approvalsPath, `${testname}_json`, results.jsonResult, CEScrubbers);
+        approvals.verifyAsJSONAndScrub(approvalsPath, `${testname}_text`, results.textResult, CEScrubbers);
+        
+        if (results.formResult)
+            approvals.verifyAsJSONAndScrub(approvalsPath, `${testname}_form`, results.formResult, CEScrubbers);
+    });
+
+    it('approval 2', async () => {
+        const testname = 'defaultsquareexecution';
+        const results = await findOrCreateCompilationByName(testname, getDefaultSquareExecution);
         
         if (results.jsonResult) delete (results.jsonResult as any)['popularArguments'];
 

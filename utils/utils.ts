@@ -1,7 +1,9 @@
 import { Api, ICompilationResult, APIType, ICompiler, ICompilerFilters } from "@partouf/compilerexplorer-api";
 
 export function pathScrubber(data: string) {
-    return (data || '').replace(/\"\.?\/.*\/.*\"/g, '"**Scrubbed-path**"');
+    return (data || '').
+        replace(/\"\.?\/.*\/.*\"/g, '"**Scrubbed-path**"').
+        replace(/\"-Wl,-rpath,\/.*\"/g, "-Wl,-rpath,**Scrubbed-path**");
 };
 
 export class TestConfig {
@@ -107,7 +109,7 @@ export async function getFormCompiler(): Promise<ICompiler> {
     return await config.formApi.compilers.findById(config.defaultCompilerId);
 }
 
-export async function doCompilation(source: string,  filters: ICompilerFilters): Promise<TrippleCompilationResult> {
+export async function doCompilation(source: string,  filters: ICompilerFilters, compilerArguments: Array<string> = []): Promise<TrippleCompilationResult> {
     initApis();
 
     let formResult: any = undefined;
@@ -117,12 +119,12 @@ export async function doCompilation(source: string,  filters: ICompilerFilters):
 
     if (config.formApi) {
         const formCompiler = await getFormCompiler();
-        formResult = await formCompiler.compile(source, [], undefined, filters, undefined);
+        formResult = await formCompiler.compile(source, compilerArguments, undefined, filters, undefined);
     }
 
     const result = new TrippleCompilationResult(
-        await jsonCompiler.compile(source, [], undefined, filters, undefined),
-        await textCompiler.compile(source, [], undefined, filters, undefined),
+        await jsonCompiler.compile(source, compilerArguments, undefined, filters, undefined),
+        await textCompiler.compile(source, compilerArguments, undefined, filters, undefined),
         formResult
     );
 
