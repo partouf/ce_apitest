@@ -21,7 +21,7 @@
   },
   "homepage": "https://github.com/partouf/ce_apitest#readme",
   "dependencies": {
-    "@partouf/compilerexplorer-api": "0.0.5",
+    "@partouf/compilerexplorer-api": "0.0.6",
     "@types/chai": "^4.2.12",
     "@types/mocha": "^8.0.1",
     "approvals": "^3.0.5",
