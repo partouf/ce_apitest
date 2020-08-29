@@ -2,7 +2,7 @@
 import { expect } from 'chai';
 import 'mocha';
 import { ICompilerFilters, ICompilationResult } from '@partouf/compilerexplorer-api';
-import { TrippleCompilationResult, doCompilation, findOrCreateCompilationByName, getJsonCompiler, getConfig, pathScrubber } from '../utils/utils';
+import { TrippleCompilationResult, doCompilation, findOrCreateCompilationByName, getJsonCompiler, getConfig, pathScrubber, asmSizeScrubber } from '../utils/utils';
 import path from 'path';
 
 const approvals = require('approvals');
@@ -10,7 +10,8 @@ const approvals = require('approvals');
 const approvalsPath = path.join(__dirname, '../../approvals');
 
 const CEScrubbers = approvals.scrubbers.multiScrubber([
-    pathScrubber
+    pathScrubber,
+    asmSizeScrubber
 ]);
 
 async function getDefaultSquareCompilation(): Promise<TrippleCompilationResult> {
@@ -82,6 +83,43 @@ int main(int argc, char **argv) {
     } as ICompilerFilters
 
     return doCompilation(source, filters, ['-O3', '-std=c++2a']);
+}
+
+async function getLibraryExecution(): Promise<TrippleCompilationResult> {
+    const source =
+`#include <catch2/catch_test_macros.hpp>
+#include <fmt/core.h>
+#include <string>
+
+TEST_CASE( "Fmt test", "[fmt]" ) {
+    REQUIRE( fmt::format("The answer is {:d}", 42)
+        == "The answer is 42" );
+}
+`;
+
+    const filters = {
+        binary: false,
+        demangle: false,
+        directives: true,
+        execute: true,
+        intel: true,
+        labels: true,
+        commentOnly: true,
+        libraryCode: false,
+    } as ICompilerFilters
+
+    const libraries = [
+        {
+            id: "fmt",
+            version: "700"
+        },
+        {
+            id: "catch2",
+            version: "300-preview2"
+        }
+    ];
+
+    return doCompilation(source, filters, ['-O3', '-lCatch2Main'], libraries);
 }
 
 function testCompilationSuccess(result: ICompilationResult) {
@@ -167,6 +205,19 @@ describe('Square example', async () => {
     it('approval 2', async () => {
         const testname = 'defaultsquareexecution';
         const results = await findOrCreateCompilationByName(testname, getDefaultSquareExecution);
+        
+        if (results.jsonResult) delete (results.jsonResult as any)['popularArguments'];
+
+        approvals.verifyAsJSONAndScrub(approvalsPath, `${testname}_json`, results.jsonResult, CEScrubbers);
+        approvals.verifyAsJSONAndScrub(approvalsPath, `${testname}_text`, results.textResult, CEScrubbers);
+        
+        if (results.formResult)
+            approvals.verifyAsJSONAndScrub(approvalsPath, `${testname}_form`, results.formResult, CEScrubbers);
+    });
+
+    it('approval lib', async () => {
+        const testname = 'libraryexecution';
+        const results = await findOrCreateCompilationByName(testname, getLibraryExecution);
         
         if (results.jsonResult) delete (results.jsonResult as any)['popularArguments'];
 

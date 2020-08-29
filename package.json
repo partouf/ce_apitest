@@ -6,9 +6,9 @@
   "scripts": {
     "build": "tsc",
     "test-local": "cross-env CEURL=http://127.0.0.1:10240 mocha --recursive ./dist/test",
-    "test-prod": "cross-env CEURL=https://godbolt.org mocha --recursive ./dist/test",
-    "test-beta": "cross-env CEURL=https://godbolt.org/beta mocha --recursive ./dist/test",
-    "test-staging": "cross-env CEURL=https://godbolt.org/staging mocha --recursive ./dist/test"
+    "test-prod": "cross-env CEURL=https://godbolt.org mocha --timeout 10000 --recursive ./dist/test",
+    "test-beta": "cross-env CEURL=https://godbolt.org/beta mocha --timeout 10000 --recursive ./dist/test",
+    "test-staging": "cross-env CEURL=https://godbolt.org/staging mocha --timeout 10000 --recursive ./dist/test"
   },
   "repository": {
     "type": "git",

@@ -62,7 +62,6 @@
       "text": "        ret"
     }
   ],
-  "asmSize": 2703,
   "code": 0,
   "compilationOptions": [
     "-g",

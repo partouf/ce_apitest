@@ -1,0 +1,2763 @@
+{
+  "asm": [
+    {
+      "labels": [],
+      "source": null,
+      "text": "_ZN5Catch10BinaryExprIRKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEERA17_KcED2Ev:"
+    },
+    {
+      "labels": [
+        {
+          "name": "_ZTVN5Catch10BinaryExprIRKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEERA17_KcEE",
+          "range": {
+            "endCol": 133,
+            "startCol": 46
+          }
+        }
+      ],
+      "source": {
+        "file": "**Scrubbed-path**",
+        "line": 65
+      },
+      "text": "        mov     QWORD PTR [rdi], OFFSET FLAT:_ZTVN5Catch10BinaryExprIRKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEERA17_KcEE+16"
+    },
+    {
+      "labels": [],
+      "source": {
+        "file": "**Scrubbed-path**",
+        "line": 65
+      },
+      "text": "        jmp     _ZN5Catch20ITransientExpressionD2Ev"
+    },
+    {
+      "labels": [],
+      "source": null,
+      "text": "_ZN5Catch10BinaryExprIRKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEERA17_KcED0Ev:"
+    },
+    {
+      "labels": [],
+      "source": {
+        "file": "**Scrubbed-path**",
+        "line": 65
+      },
+      "text": "        push    rbp"
+    },
+    {
+      "labels": [],
+      "source": {
+        "file": "**Scrubbed-path**",
+        "line": 65
+      },
+      "text": "        mov     rbp, rdi"
+    },
+    {
+      "labels": [
+        {
+          "name": "_ZTVN5Catch10BinaryExprIRKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEERA17_KcEE",
+          "range": {
+            "endCol": 133,
+            "startCol": 46
+          }
+        }
+      ],
+      "source": {
+        "file": "**Scrubbed-path**",
+        "line": 65
+      },
+      "text": "        mov     QWORD PTR [rdi], OFFSET FLAT:_ZTVN5Catch10BinaryExprIRKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEERA17_KcEE+16"
+    },
+    {
+      "labels": [],
+      "source": {
+        "file": "**Scrubbed-path**",
+        "line": 65
+      },
+      "text": "        call    _ZN5Catch20ITransientExpressionD2Ev"
+    },
+    {
+      "labels": [],
+      "source": {
+        "file": "**Scrubbed-path**",
+        "line": 65
+      },
+      "text": "        mov     rdi, rbp"
+    },
+    {
+      "labels": [],
+      "source": {
+        "file": "**Scrubbed-path**",
+        "line": 65
+      },
+      "text": "        mov     esi, 48"
+    },
+    {
+      "labels": [],
+      "source": {
+        "file": "**Scrubbed-path**",
+        "line": 65
+      },
+      "text": "        pop     rbp"
+    },
+    {
+      "labels": [],
+      "source": {
+        "file": "**Scrubbed-path**",
+        "line": 65
+      },
+      "text": "        jmp     _ZdlPvm"
+    },
+    {
+      "labels": [],
+      "source": null,
+      "text": ".LC0:"
+    },
+    {
+      "labels": [],
+      "source": null,
+      "text": "        .string \"basic_string::_M_construct null not valid\""
+    },
+    {
+      "labels": [],
+      "source": null,
+      "text": "_ZNK5Catch10BinaryExprIRKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEERA17_KcE29streamReconstructedExpressionERSo:"
+    },
+    {
+      "labels": [],
+      "source": {
+        "file": "**Scrubbed-path**",
+        "line": 70
+      },
+      "text": "        push    r15"
+    },
+    {
+      "labels": [],
+      "source": {
+        "file": "**Scrubbed-path**",
+        "line": 70
+      },
+      "text": "        push    r14"
+    },
+    {
+      "labels": [],
+      "source": {
+        "file": "**Scrubbed-path**",
+        "line": 70
+      },
+      "text": "        push    r13"
+    },
+    {
+      "labels": [],
+      "source": {
+        "file": "**Scrubbed-path**",
+        "line": 70
+      },
+      "text": "        push    r12"
+    },
+    {
+      "labels": [],
+      "source": {
+        "file": "**Scrubbed-path**",
+        "line": 70
+      },
+      "text": "        push    rbp"
+    },
+    {
+      "labels": [],
+      "source": {
+        "file": "**Scrubbed-path**",
+        "line": 70
+      },
+      "text": "        push    rbx"
+    },
+    {
+      "labels": [],
+      "source": {
+        "file": "**Scrubbed-path**",
+        "line": 70
+      },
+      "text": "        sub     rsp, 72"
+    },
+    {
+      "labels": [],
+      "source": {
+        "file": "**Scrubbed-path**",
+        "line": 72
+      },
+      "text": "        mov     r15, QWORD PTR [rdi+40]"
+    },
+    {
+      "labels": [],
+      "source": {
+        "file": "**Scrubbed-path**",
+        "line": 157
+      },
+      "text": "        lea     rbp, [rsp+48]"
+    },
+    {
+      "labels": [],
+      "source": {
+        "file": "**Scrubbed-path**",
+        "line": 157
+      },
+      "text": "        mov     QWORD PTR [rsp+32], rbp"
+    },
+    {
+      "labels": [],
+      "source": {
+        "file": "**Scrubbed-path**",
+        "line": 527
+      },
+      "text": "        test    r15, r15"
+    },
+    {
+      "labels": [
+        {
+          "name": ".L27",
+          "range": {
+            "endCol": 21,
+            "startCol": 17
+          }
+        }
+      ],
+      "source": {
+        "file": "**Scrubbed-path**",
+        "line": 527
+      },
+      "text": "        je      .L27"
+    },
+    {
+      "labels": [],
+      "source": {
+        "file": "**Scrubbed-path**",
+        "line": 527
+      },
+      "text": "        mov     rbx, rdi"
+    },
+    {
+      "labels": [],
+      "source": {
+        "file": "**Scrubbed-path**",
+        "line": 335
+      },
+      "text": "        mov     rdi, r15"
+    },
+    {
+      "labels": [],
+      "source": {
+        "file": "**Scrubbed-path**",
+        "line": 335
+      },
+      "text": "        mov     r13, rsi"
+    },
+    {
+      "labels": [],
+      "source": {
+        "file": "**Scrubbed-path**",
+        "line": 335
+      },
+      "text": "        call    strlen"
+    },
+    {
+      "labels": [],
+      "source": {
+        "file": "**Scrubbed-path**",
+        "line": 215
+      },
+      "text": "        mov     QWORD PTR [rsp], rax"
+    },
+    {
+      "labels": [],
+      "source": {
+        "file": "**Scrubbed-path**",
+        "line": 335
+      },
+      "text": "        mov     r12, rax"
+    },
+    {
+      "labels": [],
+      "source": {
+        "file": "**Scrubbed-path**",
+        "line": 217
+      },
+      "text": "        cmp     rax, 15"
+    },
+    {
+      "labels": [
+        {
+          "name": ".L28",
+          "range": {
+            "endCol": 21,
+            "startCol": 17
+          }
+        }
+      ],
+      "source": {
+        "file": "**Scrubbed-path**",
+        "line": 217
+      },
+      "text": "        ja      .L28"
+    },
+    {
+      "labels": [],
+      "source": {
+        "file": "**Scrubbed-path**",
+        "line": 348
+      },
+      "text": "        cmp     rax, 1"
+    },
+    {
+      "labels": [
+        {
+          "name": ".L9",
+          "range": {
+            "endCol": 20,
+            "startCol": 17
+          }
+        }
+      ],
+      "source": {
+        "file": "**Scrubbed-path**",
+        "line": 348
+      },
+      "text": "        jne     .L9"
+    },
+    {
+      "labels": [],
+      "source": {
+        "file": "**Scrubbed-path**",
+        "line": 349
+      },
+      "text": "        movzx   edx, BYTE PTR [r15]"
+    },
+    {
+      "labels": [],
+      "source": {
+        "file": "**Scrubbed-path**",
+        "line": 300
+      },
+      "text": "        mov     r14, rsp"
+    },
+    {
+      "labels": [],
+      "source": {
+        "file": "**Scrubbed-path**",
+        "line": 300
+      },
+      "text": "        mov     BYTE PTR [rsp+48], dl"
+    },
+    {
+      "labels": [],
+      "source": {
+        "file": "**Scrubbed-path**",
+        "line": 300
+      },
+      "text": "        mov     rdx, rbp"
+    },
+    {
+      "labels": [],
+      "source": null,
+      "text": ".L10:"
+    },
+    {
+      "labels": [],
+      "source": {
+        "file": "**Scrubbed-path**",
+        "line": 183
+      },
+      "text": "        mov     QWORD PTR [rsp+40], rax"
+    },
+    {
+      "labels": [],
+      "source": {
+        "file": "**Scrubbed-path**",
+        "line": 125
+      },
+      "text": "        lea     rsi, [rsp+32]"
+    },
+    {
+      "labels": [],
+      "source": {
+        "file": "**Scrubbed-path**",
+        "line": 125
+      },
+      "text": "        mov     rdi, r14"
+    },
+    {
+      "labels": [],
+      "source": {
+        "file": "**Scrubbed-path**",
+        "line": 300
+      },
+      "text": "        mov     BYTE PTR [rdx+rax], 0"
+    },
+    {
+      "labels": [],
+      "source": {
+        "file": "**Scrubbed-path**",
+        "line": 125
+      },
+      "text": "        call    _ZN5Catch11StringMakerINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEvE7convertERKS6_"
+    },
+    {
+      "labels": [],
+      "source": {
+        "file": "**Scrubbed-path**",
+        "line": 222
+      },
+      "text": "        mov     rdi, QWORD PTR [rsp+32]"
+    },
+    {
+      "labels": [],
+      "source": {
+        "file": "**Scrubbed-path**",
+        "line": 231
+      },
+      "text": "        cmp     rdi, rbp"
+    },
+    {
+      "labels": [
+        {
+          "name": ".L11",
+          "range": {
+            "endCol": 21,
+            "startCol": 17
+          }
+        }
+      ],
+      "source": {
+        "file": "**Scrubbed-path**",
+        "line": 231
+      },
+      "text": "        je      .L11"
+    },
+    {
+      "labels": [],
+      "source": {
+        "file": "**Scrubbed-path**",
+        "line": 128
+      },
+      "text": "        call    _ZdlPv"
+    },
+    {
+      "labels": [],
+      "source": null,
+      "text": ".L11:"
+    },
+    {
+      "labels": [],
+      "source": {
+        "file": "**Scrubbed-path**",
+        "line": 125
+      },
+      "text": "        mov     rsi, QWORD PTR [rbx+16]"
+    },
+    {
+      "labels": [],
+      "source": {
+        "file": "**Scrubbed-path**",
+        "line": 125
+      },
+      "text": "        lea     rdi, [rsp+32]"
+    },
+    {
+      "labels": [],
+      "source": {
+        "file": "**Scrubbed-path**",
+        "line": 125
+      },
+      "text": "        call    _ZN5Catch11StringMakerINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEvE7convertERKS6_"
+    },
+    {
+      "labels": [],
+      "source": {
+        "file": "**Scrubbed-path**",
+        "line": 72
+      },
+      "text": "        mov     rdx, QWORD PTR [rbx+32]"
+    },
+    {
+      "labels": [],
+      "source": {
+        "file": "**Scrubbed-path**",
+        "line": 72
+      },
+      "text": "        mov     rax, QWORD PTR [rbx+24]"
+    },
+    {
+      "labels": [],
+      "source": {
+        "file": "**Scrubbed-path**",
+        "line": 72
+      },
+      "text": "        mov     r8, r14"
+    },
+    {
+      "labels": [],
+      "source": {
+        "file": "**Scrubbed-path**",
+        "line": 72
+      },
+      "text": "        lea     rsi, [rsp+32]"
+    },
+    {
+      "labels": [],
+      "source": {
+        "file": "**Scrubbed-path**",
+        "line": 72
+      },
+      "text": "        mov     rdi, r13"
+    },
+    {
+      "labels": [],
+      "source": {
+        "file": "**Scrubbed-path**",
+        "line": 72
+      },
+      "text": "        mov     rcx, rdx"
+    },
+    {
+      "labels": [],
+      "source": {
+        "file": "**Scrubbed-path**",
+        "line": 72
+      },
+      "text": "        mov     rdx, rax"
+    },
+    {
+      "labels": [],
+      "source": {
+        "file": "**Scrubbed-path**",
+        "line": 72
+      },
+      "text": "        call    _ZN5Catch29formatReconstructedExpressionERSoRKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEENS_9StringRefES8_"
+    },
+    {
+      "labels": [],
+      "source": {
+        "file": "**Scrubbed-path**",
+        "line": 222
+      },
+      "text": "        mov     rdi, QWORD PTR [rsp+32]"
+    },
+    {
+      "labels": [],
+      "source": {
+        "file": "**Scrubbed-path**",
+        "line": 231
+      },
+      "text": "        cmp     rdi, rbp"
+    },
+    {
+      "labels": [
+        {
+          "name": ".L15",
+          "range": {
+            "endCol": 21,
+            "startCol": 17
+          }
+        }
+      ],
+      "source": {
+        "file": "**Scrubbed-path**",
+        "line": 231
+      },
+      "text": "        je      .L15"
+    },
+    {
+      "labels": [],
+      "source": {
+        "file": "**Scrubbed-path**",
+        "line": 128
+      },
+      "text": "        call    _ZdlPv"
+    },
+    {
+      "labels": [],
+      "source": null,
+      "text": ".L15:"
+    },
+    {
+      "labels": [],
+      "source": {
+        "file": "**Scrubbed-path**",
+        "line": 222
+      },
+      "text": "        mov     rdi, QWORD PTR [rsp]"
+    },
+    {
+      "labels": [],
+      "source": {
+        "file": "**Scrubbed-path**",
+        "line": 231
+      },
+      "text": "        lea     rax, [rsp+16]"
+    },
+    {
+      "labels": [],
+      "source": {
+        "file": "**Scrubbed-path**",
+        "line": 231
+      },
+      "text": "        cmp     rdi, rax"
+    },
+    {
+      "labels": [
+        {
+          "name": ".L5",
+          "range": {
+            "endCol": 20,
+            "startCol": 17
+          }
+        }
+      ],
+      "source": {
+        "file": "**Scrubbed-path**",
+        "line": 231
+      },
+      "text": "        je      .L5"
+    },
+    {
+      "labels": [],
+      "source": {
+        "file": "**Scrubbed-path**",
+        "line": 128
+      },
+      "text": "        call    _ZdlPv"
+    },
+    {
+      "labels": [],
+      "source": null,
+      "text": ".L5:"
+    },
+    {
+      "labels": [],
+      "source": {
+        "file": "**Scrubbed-path**",
+        "line": 73
+      },
+      "text": "        add     rsp, 72"
+    },
+    {
+      "labels": [],
+      "source": {
+        "file": "**Scrubbed-path**",
+        "line": 73
+      },
+      "text": "        pop     rbx"
+    },
+    {
+      "labels": [],
+      "source": {
+        "file": "**Scrubbed-path**",
+        "line": 73
+      },
+      "text": "        pop     rbp"
+    },
+    {
+      "labels": [],
+      "source": {
+        "file": "**Scrubbed-path**",
+        "line": 73
+      },
+      "text": "        pop     r12"
+    },
+    {
+      "labels": [],
+      "source": {
+        "file": "**Scrubbed-path**",
+        "line": 73
+      },
+      "text": "        pop     r13"
+    },
+    {
+      "labels": [],
+      "source": {
+        "file": "**Scrubbed-path**",
+        "line": 73
+      },
+      "text": "        pop     r14"
+    },
+    {
+      "labels": [],
+      "source": {
+        "file": "**Scrubbed-path**",
+        "line": 73
+      },
+      "text": "        pop     r15"
+    },
+    {
+      "labels": [],
+      "source": {
+        "file": "**Scrubbed-path**",
+        "line": 73
+      },
+      "text": "        ret"
+    },
+    {
+      "labels": [],
+      "source": null,
+      "text": ".L9:"
+    },
+    {
+      "labels": [],
+      "source": {
+        "file": "**Scrubbed-path**",
+        "line": 363
+      },
+      "text": "        test    rax, rax"
+    },
+    {
+      "labels": [
+        {
+          "name": ".L29",
+          "range": {
+            "endCol": 21,
+            "startCol": 17
+          }
+        }
+      ],
+      "source": {
+        "file": "**Scrubbed-path**",
+        "line": 363
+      },
+      "text": "        jne     .L29"
+    },
+    {
+      "labels": [],
+      "source": {
+        "file": "**Scrubbed-path**",
+        "line": 363
+      },
+      "text": "        mov     rdx, rbp"
+    },
+    {
+      "labels": [],
+      "source": {
+        "file": "**Scrubbed-path**",
+        "line": 363
+      },
+      "text": "        mov     r14, rsp"
+    },
+    {
+      "labels": [
+        {
+          "name": ".L10",
+          "range": {
+            "endCol": 21,
+            "startCol": 17
+          }
+        }
+      ],
+      "source": {
+        "file": "**Scrubbed-path**",
+        "line": 363
+      },
+      "text": "        jmp     .L10"
+    },
+    {
+      "labels": [],
+      "source": null,
+      "text": ".L28:"
+    },
+    {
+      "labels": [],
+      "source": {
+        "file": "**Scrubbed-path**",
+        "line": 219
+      },
+      "text": "        mov     r14, rsp"
+    },
+    {
+      "labels": [],
+      "source": {
+        "file": "**Scrubbed-path**",
+        "line": 219
+      },
+      "text": "        lea     rdi, [rsp+32]"
+    },
+    {
+      "labels": [],
+      "source": {
+        "file": "**Scrubbed-path**",
+        "line": 219
+      },
+      "text": "        xor     edx, edx"
+    },
+    {
+      "labels": [],
+      "source": {
+        "file": "**Scrubbed-path**",
+        "line": 219
+      },
+      "text": "        mov     rsi, r14"
+    },
+    {
+      "labels": [],
+      "source": {
+        "file": "**Scrubbed-path**",
+        "line": 219
+      },
+      "text": "        call    _ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE9_M_createERmm"
+    },
+    {
+      "labels": [],
+      "source": {
+        "file": "**Scrubbed-path**",
+        "line": 179
+      },
+      "text": "        mov     QWORD PTR [rsp+32], rax"
+    },
+    {
+      "labels": [],
+      "source": {
+        "file": "**Scrubbed-path**",
+        "line": 219
+      },
+      "text": "        mov     rdi, rax"
+    },
+    {
+      "labels": [],
+      "source": {
+        "file": "**Scrubbed-path**",
+        "line": 211
+      },
+      "text": "        mov     rax, QWORD PTR [rsp]"
+    },
+    {
+      "labels": [],
+      "source": {
+        "file": "**Scrubbed-path**",
+        "line": 211
+      },
+      "text": "        mov     QWORD PTR [rsp+48], rax"
+    },
+    {
+      "labels": [],
+      "source": null,
+      "text": ".L8:"
+    },
+    {
+      "labels": [],
+      "source": {
+        "file": "**Scrubbed-path**",
+        "line": 365
+      },
+      "text": "        mov     rdx, r12"
+    },
+    {
+      "labels": [],
+      "source": {
+        "file": "**Scrubbed-path**",
+        "line": 365
+      },
+      "text": "        mov     rsi, r15"
+    },
+    {
+      "labels": [],
+      "source": {
+        "file": "**Scrubbed-path**",
+        "line": 365
+      },
+      "text": "        call    memcpy"
+    },
+    {
+      "labels": [],
+      "source": {
+        "file": "**Scrubbed-path**",
+        "line": 365
+      },
+      "text": "        mov     rax, QWORD PTR [rsp]"
+    },
+    {
+      "labels": [],
+      "source": {
+        "file": "**Scrubbed-path**",
+        "line": 365
+      },
+      "text": "        mov     rdx, QWORD PTR [rsp+32]"
+    },
+    {
+      "labels": [
+        {
+          "name": ".L10",
+          "range": {
+            "endCol": 21,
+            "startCol": 17
+          }
+        }
+      ],
+      "source": {
+        "file": "**Scrubbed-path**",
+        "line": 365
+      },
+      "text": "        jmp     .L10"
+    },
+    {
+      "labels": [],
+      "source": null,
+      "text": ".L27:"
+    },
+    {
+      "labels": [
+        {
+          "name": ".LC0",
+          "range": {
+            "endCol": 38,
+            "startCol": 34
+          }
+        }
+      ],
+      "source": {
+        "file": "**Scrubbed-path**",
+        "line": 212
+      },
+      "text": "        mov     edi, OFFSET FLAT:.LC0"
+    },
+    {
+      "labels": [],
+      "source": {
+        "file": "**Scrubbed-path**",
+        "line": 212
+      },
+      "text": "        call    _ZSt19__throw_logic_errorPKc"
+    },
+    {
+      "labels": [],
+      "source": null,
+      "text": ".L29:"
+    },
+    {
+      "labels": [],
+      "source": {
+        "file": "**Scrubbed-path**",
+        "line": 225
+      },
+      "text": "        mov     rdi, rbp"
+    },
+    {
+      "labels": [],
+      "source": {
+        "file": "**Scrubbed-path**",
+        "line": 225
+      },
+      "text": "        mov     r14, rsp"
+    },
+    {
+      "labels": [
+        {
+          "name": ".L8",
+          "range": {
+            "endCol": 20,
+            "startCol": 17
+          }
+        }
+      ],
+      "source": {
+        "file": "**Scrubbed-path**",
+        "line": 225
+      },
+      "text": "        jmp     .L8"
+    },
+    {
+      "labels": [],
+      "source": {
+        "file": "**Scrubbed-path**",
+        "line": 225
+      },
+      "text": "        mov     r12, rax"
+    },
+    {
+      "labels": [
+        {
+          "name": ".L13",
+          "range": {
+            "endCol": 21,
+            "startCol": 17
+          }
+        }
+      ],
+      "source": {
+        "file": "**Scrubbed-path**",
+        "line": 225
+      },
+      "text": "        jmp     .L13"
+    },
+    {
+      "labels": [],
+      "source": {
+        "file": "**Scrubbed-path**",
+        "line": 225
+      },
+      "text": "        mov     rbp, rax"
+    },
+    {
+      "labels": [
+        {
+          "name": ".L19",
+          "range": {
+            "endCol": 21,
+            "startCol": 17
+          }
+        }
+      ],
+      "source": {
+        "file": "**Scrubbed-path**",
+        "line": 225
+      },
+      "text": "        jmp     .L19"
+    },
+    {
+      "labels": [],
+      "source": {
+        "file": "**Scrubbed-path**",
+        "line": 225
+      },
+      "text": "        mov     rbx, rax"
+    },
+    {
+      "labels": [
+        {
+          "name": ".L17",
+          "range": {
+            "endCol": 21,
+            "startCol": 17
+          }
+        }
+      ],
+      "source": {
+        "file": "**Scrubbed-path**",
+        "line": 225
+      },
+      "text": "        jmp     .L17"
+    },
+    {
+      "labels": [],
+      "source": null,
+      "text": ".L13:"
+    },
+    {
+      "labels": [],
+      "source": {
+        "file": "**Scrubbed-path**",
+        "line": 222
+      },
+      "text": "        mov     rdi, QWORD PTR [rsp+32]"
+    },
+    {
+      "labels": [],
+      "source": {
+        "file": "**Scrubbed-path**",
+        "line": 231
+      },
+      "text": "        cmp     rdi, rbp"
+    },
+    {
+      "labels": [
+        {
+          "name": ".L14",
+          "range": {
+            "endCol": 21,
+            "startCol": 17
+          }
+        }
+      ],
+      "source": {
+        "file": "**Scrubbed-path**",
+        "line": 231
+      },
+      "text": "        je      .L14"
+    },
+    {
+      "labels": [],
+      "source": {
+        "file": "**Scrubbed-path**",
+        "line": 128
+      },
+      "text": "        call    _ZdlPv"
+    },
+    {
+      "labels": [],
+      "source": null,
+      "text": ".L14:"
+    },
+    {
+      "labels": [],
+      "source": {
+        "file": "**Scrubbed-path**",
+        "line": 128
+      },
+      "text": "        mov     rdi, r12"
+    },
+    {
+      "labels": [],
+      "source": {
+        "file": "**Scrubbed-path**",
+        "line": 128
+      },
+      "text": "        call    _Unwind_Resume"
+    },
+    {
+      "labels": [],
+      "source": null,
+      "text": ".L17:"
+    },
+    {
+      "labels": [],
+      "source": {
+        "file": "**Scrubbed-path**",
+        "line": 222
+      },
+      "text": "        mov     rdi, QWORD PTR [rsp+32]"
+    },
+    {
+      "labels": [],
+      "source": {
+        "file": "**Scrubbed-path**",
+        "line": 231
+      },
+      "text": "        cmp     rdi, rbp"
+    },
+    {
+      "labels": [
+        {
+          "name": ".L18",
+          "range": {
+            "endCol": 21,
+            "startCol": 17
+          }
+        }
+      ],
+      "source": {
+        "file": "**Scrubbed-path**",
+        "line": 231
+      },
+      "text": "        je      .L18"
+    },
+    {
+      "labels": [],
+      "source": {
+        "file": "**Scrubbed-path**",
+        "line": 128
+      },
+      "text": "        call    _ZdlPv"
+    },
+    {
+      "labels": [],
+      "source": null,
+      "text": ".L18:"
+    },
+    {
+      "labels": [],
+      "source": {
+        "file": "**Scrubbed-path**",
+        "line": 128
+      },
+      "text": "        mov     rbp, rbx"
+    },
+    {
+      "labels": [],
+      "source": null,
+      "text": ".L19:"
+    },
+    {
+      "labels": [],
+      "source": {
+        "file": "**Scrubbed-path**",
+        "line": 222
+      },
+      "text": "        mov     rdi, QWORD PTR [rsp]"
+    },
+    {
+      "labels": [],
+      "source": {
+        "file": "**Scrubbed-path**",
+        "line": 231
+      },
+      "text": "        lea     rax, [rsp+16]"
+    },
+    {
+      "labels": [],
+      "source": {
+        "file": "**Scrubbed-path**",
+        "line": 231
+      },
+      "text": "        cmp     rdi, rax"
+    },
+    {
+      "labels": [
+        {
+          "name": ".L20",
+          "range": {
+            "endCol": 21,
+            "startCol": 17
+          }
+        }
+      ],
+      "source": {
+        "file": "**Scrubbed-path**",
+        "line": 231
+      },
+      "text": "        je      .L20"
+    },
+    {
+      "labels": [],
+      "source": {
+        "file": "**Scrubbed-path**",
+        "line": 128
+      },
+      "text": "        call    _ZdlPv"
+    },
+    {
+      "labels": [],
+      "source": null,
+      "text": ".L20:"
+    },
+    {
+      "labels": [],
+      "source": {
+        "file": "**Scrubbed-path**",
+        "line": 128
+      },
+      "text": "        mov     rdi, rbp"
+    },
+    {
+      "labels": [],
+      "source": {
+        "file": "**Scrubbed-path**",
+        "line": 128
+      },
+      "text": "        call    _Unwind_Resume"
+    },
+    {
+      "labels": [],
+      "source": null,
+      "text": "_ZN5Catch16AssertionHandlerD2Ev:"
+    },
+    {
+      "labels": [],
+      "source": {
+        "file": "**Scrubbed-path**",
+        "line": 41
+      },
+      "text": "        cmp     BYTE PTR [rdi+58], 0"
+    },
+    {
+      "labels": [],
+      "source": {
+        "file": "**Scrubbed-path**",
+        "line": 40
+      },
+      "text": "        mov     rsi, rdi"
+    },
+    {
+      "labels": [
+        {
+          "name": ".L30",
+          "range": {
+            "endCol": 21,
+            "startCol": 17
+          }
+        }
+      ],
+      "source": {
+        "file": "**Scrubbed-path**",
+        "line": 41
+      },
+      "text": "        jne     .L30"
+    },
+    {
+      "labels": [],
+      "source": {
+        "file": "**Scrubbed-path**",
+        "line": 42
+      },
+      "text": "        mov     rdi, QWORD PTR [rdi+64]"
+    },
+    {
+      "labels": [],
+      "source": {
+        "file": "**Scrubbed-path**",
+        "line": 42
+      },
+      "text": "        mov     rax, QWORD PTR [rdi]"
+    },
+    {
+      "labels": [],
+      "source": {
+        "file": "**Scrubbed-path**",
+        "line": 42
+      },
+      "text": "        jmp     [QWORD PTR [rax+144]]"
+    },
+    {
+      "labels": [],
+      "source": null,
+      "text": ".L30:"
+    },
+    {
+      "labels": [],
+      "source": {
+        "file": "**Scrubbed-path**",
+        "line": 44
+      },
+      "text": "        ret"
+    },
+    {
+      "labels": [],
+      "source": null,
+      "text": ".LC1:"
+    },
+    {
+      "labels": [],
+      "source": null,
+      "text": "        .string \"fmt::format(\\\"The answer is {:d}\\\", 42) == \\\"The answer is 42\\\"\""
+    },
+    {
+      "labels": [],
+      "source": null,
+      "text": ".LC2:"
+    },
+    {
+      "labels": [],
+      "source": null,
+      "text": "        .string \"./example.cpp\""
+    },
+    {
+      "labels": [],
+      "source": null,
+      "text": ".LC3:"
+    },
+    {
+      "labels": [],
+      "source": null,
+      "text": "        .string \"REQUIRE\""
+    },
+    {
+      "labels": [],
+      "source": null,
+      "text": ".LC4:"
+    },
+    {
+      "labels": [],
+      "source": null,
+      "text": "        .string \"The answer is {:d}\""
+    },
+    {
+      "labels": [],
+      "source": null,
+      "text": ".LC5:"
+    },
+    {
+      "labels": [],
+      "source": null,
+      "text": "        .string \"==\""
+    },
+    {
+      "labels": [],
+      "source": null,
+      "text": ".LC6:"
+    },
+    {
+      "labels": [],
+      "source": null,
+      "text": "        .string \"The answer is 42\""
+    },
+    {
+      "labels": [],
+      "source": null,
+      "text": "_ZL29____C_A_T_C_H____T_E_S_T____0v:"
+    },
+    {
+      "labels": [],
+      "source": {
+        "file": null,
+        "line": 5
+      },
+      "text": "        push    rbp"
+    },
+    {
+      "labels": [
+        {
+          "name": ".LC1",
+          "range": {
+            "endCol": 38,
+            "startCol": 34
+          }
+        }
+      ],
+      "source": {
+        "file": null,
+        "line": 6
+      },
+      "text": "        mov     esi, OFFSET FLAT:.LC1"
+    },
+    {
+      "labels": [],
+      "source": {
+        "file": null,
+        "line": 5
+      },
+      "text": "        sub     rsp, 192"
+    },
+    {
+      "labels": [],
+      "source": {
+        "file": null,
+        "line": 6
+      },
+      "text": "        lea     rdi, [rsp+64]"
+    },
+    {
+      "labels": [],
+      "source": {
+        "file": null,
+        "line": 6
+      },
+      "text": "        lea     rbp, [rsp+32]"
+    },
+    {
+      "labels": [],
+      "source": {
+        "file": null,
+        "line": 6
+      },
+      "text": "        call    _ZN5Catch9StringRefC1EPKc"
+    },
+    {
+      "labels": [],
+      "source": {
+        "file": null,
+        "line": 6
+      },
+      "text": "        mov     rcx, QWORD PTR [rsp+64]"
+    },
+    {
+      "labels": [],
+      "source": {
+        "file": null,
+        "line": 6
+      },
+      "text": "        mov     r8, QWORD PTR [rsp+72]"
+    },
+    {
+      "labels": [],
+      "source": {
+        "file": null,
+        "line": 6
+      },
+      "text": "        mov     rdx, rbp"
+    },
+    {
+      "labels": [],
+      "source": {
+        "file": null,
+        "line": 6
+      },
+      "text": "        lea     rsi, [rsp+16]"
+    },
+    {
+      "labels": [],
+      "source": {
+        "file": null,
+        "line": 6
+      },
+      "text": "        lea     rdi, [rsp+112]"
+    },
+    {
+      "labels": [],
+      "source": {
+        "file": null,
+        "line": 6
+      },
+      "text": "        mov     r9d, 1"
+    },
+    {
+      "labels": [
+        {
+          "name": ".LC2",
+          "range": {
+            "endCol": 53,
+            "startCol": 49
+          }
+        }
+      ],
+      "source": {
+        "file": "**Scrubbed-path**",
+        "line": 50
+      },
+      "text": "        mov     QWORD PTR [rsp+32], OFFSET FLAT:.LC2"
+    },
+    {
+      "labels": [],
+      "source": {
+        "file": "**Scrubbed-path**",
+        "line": 50
+      },
+      "text": "        mov     QWORD PTR [rsp+40], 6"
+    },
+    {
+      "labels": [
+        {
+          "name": ".LC3",
+          "range": {
+            "endCol": 53,
+            "startCol": 49
+          }
+        }
+      ],
+      "source": {
+        "file": null,
+        "line": 6
+      },
+      "text": "        mov     QWORD PTR [rsp+16], OFFSET FLAT:.LC3"
+    },
+    {
+      "labels": [],
+      "source": {
+        "file": null,
+        "line": 6
+      },
+      "text": "        mov     QWORD PTR [rsp+24], 7"
+    },
+    {
+      "labels": [],
+      "source": {
+        "file": null,
+        "line": 6
+      },
+      "text": "        call    _ZN5Catch16AssertionHandlerC1ERKNS_9StringRefERKNS_14SourceLineInfoES1_NS_17ResultDisposition5FlagsE"
+    },
+    {
+      "labels": [],
+      "source": {
+        "file": "**Scrubbed-path**",
+        "line": 1832
+      },
+      "text": "        mov     ecx, 1"
+    },
+    {
+      "labels": [],
+      "source": {
+        "file": "**Scrubbed-path**",
+        "line": 1832
+      },
+      "text": "        lea     r8, [rsp+64]"
+    },
+    {
+      "labels": [],
+      "source": {
+        "file": "**Scrubbed-path**",
+        "line": 1832
+      },
+      "text": "        mov     rdi, rbp"
+    },
+    {
+      "labels": [
+        {
+          "name": ".LC4",
+          "range": {
+            "endCol": 38,
+            "startCol": 34
+          }
+        }
+      ],
+      "source": {
+        "file": "**Scrubbed-path**",
+        "line": 1832
+      },
+      "text": "        mov     esi, OFFSET FLAT:.LC4"
+    },
+    {
+      "labels": [],
+      "source": {
+        "file": "**Scrubbed-path**",
+        "line": 1832
+      },
+      "text": "        mov     edx, 18"
+    },
+    {
+      "labels": [],
+      "source": {
+        "file": "**Scrubbed-path**",
+        "line": 1831
+      },
+      "text": "        mov     DWORD PTR [rsp+64], 42"
+    },
+    {
+      "labels": [],
+      "source": {
+        "file": "**Scrubbed-path**",
+        "line": 1832
+      },
+      "text": "        call    _ZN3fmt2v66detail7vformatB5cxx11ENS0_17basic_string_viewIcEENS0_11format_argsE"
+    },
+    {
+      "labels": [],
+      "source": {
+        "file": "**Scrubbed-path**",
+        "line": 1832
+      },
+      "text": "        movq    xmm0, rbp"
+    },
+    {
+      "labels": [
+        {
+          "name": ".LC6",
+          "range": {
+            "endCol": 38,
+            "startCol": 34
+          }
+        }
+      ],
+      "source": {
+        "file": "**Scrubbed-path**",
+        "line": 6177
+      },
+      "text": "        mov     esi, OFFSET FLAT:.LC6"
+    },
+    {
+      "labels": [],
+      "source": {
+        "file": "**Scrubbed-path**",
+        "line": 6177
+      },
+      "text": "        mov     rdi, rbp"
+    },
+    {
+      "labels": [],
+      "source": {
+        "file": "**Scrubbed-path**",
+        "line": 6177
+      },
+      "text": "        movhps  xmm0, QWORD PTR .LC7[rip]"
+    },
+    {
+      "labels": [],
+      "source": {
+        "file": "**Scrubbed-path**",
+        "line": 6177
+      },
+      "text": "        movaps  XMMWORD PTR [rsp], xmm0"
+    },
+    {
+      "labels": [],
+      "source": {
+        "file": "**Scrubbed-path**",
+        "line": 6177
+      },
+      "text": "        call    _ZNKSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE7compareEPKc"
+    },
+    {
+      "labels": [],
+      "source": {
+        "file": "**Scrubbed-path**",
+        "line": 80
+      },
+      "text": "        movdqa  xmm0, XMMWORD PTR [rsp]"
+    },
+    {
+      "labels": [],
+      "source": {
+        "file": null,
+        "line": 6
+      },
+      "text": "        lea     rsi, [rsp+64]"
+    },
+    {
+      "labels": [],
+      "source": {
+        "file": null,
+        "line": 6
+      },
+      "text": "        lea     rdi, [rsp+112]"
+    },
+    {
+      "labels": [],
+      "source": {
+        "file": "**Scrubbed-path**",
+        "line": 6177
+      },
+      "text": "        test    eax, eax"
+    },
+    {
+      "labels": [],
+      "source": {
+        "file": "**Scrubbed-path**",
+        "line": 43
+      },
+      "text": "        mov     BYTE PTR [rsp+72], 1"
+    },
+    {
+      "labels": [
+        {
+          "name": "_ZTVN5Catch10BinaryExprIRKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEERA17_KcEE",
+          "range": {
+            "endCol": 136,
+            "startCol": 49
+          }
+        }
+      ],
+      "source": {
+        "file": "**Scrubbed-path**",
+        "line": 80
+      },
+      "text": "        mov     QWORD PTR [rsp+64], OFFSET FLAT:_ZTVN5Catch10BinaryExprIRKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEERA17_KcEE+16"
+    },
+    {
+      "labels": [],
+      "source": {
+        "file": "**Scrubbed-path**",
+        "line": 80
+      },
+      "text": "        mov     QWORD PTR [rsp+96], 2"
+    },
+    {
+      "labels": [
+        {
+          "name": ".LC6",
+          "range": {
+            "endCol": 54,
+            "startCol": 50
+          }
+        }
+      ],
+      "source": {
+        "file": "**Scrubbed-path**",
+        "line": 80
+      },
+      "text": "        mov     QWORD PTR [rsp+104], OFFSET FLAT:.LC6"
+    },
+    {
+      "labels": [],
+      "source": {
+        "file": "**Scrubbed-path**",
+        "line": 43
+      },
+      "text": "        sete    BYTE PTR [rsp+73]"
+    },
+    {
+      "labels": [],
+      "source": {
+        "file": "**Scrubbed-path**",
+        "line": 80
+      },
+      "text": "        movaps  XMMWORD PTR [rsp+80], xmm0"
+    },
+    {
+      "labels": [],
+      "source": {
+        "file": null,
+        "line": 6
+      },
+      "text": "        call    _ZN5Catch16AssertionHandler10handleExprERKNS_20ITransientExpressionE"
+    },
+    {
+      "labels": [
+        {
+          "name": "_ZTVN5Catch10BinaryExprIRKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEERA17_KcEE",
+          "range": {
+            "endCol": 136,
+            "startCol": 49
+          }
+        }
+      ],
+      "source": {
+        "file": "**Scrubbed-path**",
+        "line": 65
+      },
+      "text": "        mov     QWORD PTR [rsp+64], OFFSET FLAT:_ZTVN5Catch10BinaryExprIRKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEERA17_KcEE+16"
+    },
+    {
+      "labels": [],
+      "source": {
+        "file": "**Scrubbed-path**",
+        "line": 65
+      },
+      "text": "        lea     rdi, [rsp+64]"
+    },
+    {
+      "labels": [],
+      "source": {
+        "file": "**Scrubbed-path**",
+        "line": 65
+      },
+      "text": "        call    _ZN5Catch20ITransientExpressionD2Ev"
+    },
+    {
+      "labels": [],
+      "source": {
+        "file": "**Scrubbed-path**",
+        "line": 222
+      },
+      "text": "        mov     rdi, QWORD PTR [rsp+32]"
+    },
+    {
+      "labels": [],
+      "source": {
+        "file": "**Scrubbed-path**",
+        "line": 231
+      },
+      "text": "        lea     rax, [rsp+48]"
+    },
+    {
+      "labels": [],
+      "source": {
+        "file": "**Scrubbed-path**",
+        "line": 231
+      },
+      "text": "        cmp     rdi, rax"
+    },
+    {
+      "labels": [
+        {
+          "name": ".L37",
+          "range": {
+            "endCol": 21,
+            "startCol": 17
+          }
+        }
+      ],
+      "source": {
+        "file": "**Scrubbed-path**",
+        "line": 231
+      },
+      "text": "        je      .L37"
+    },
+    {
+      "labels": [],
+      "source": {
+        "file": "**Scrubbed-path**",
+        "line": 128
+      },
+      "text": "        call    _ZdlPv"
+    },
+    {
+      "labels": [],
+      "source": null,
+      "text": ".L37:"
+    },
+    {
+      "labels": [],
+      "source": {
+        "file": null,
+        "line": 6
+      },
+      "text": "        lea     rdi, [rsp+112]"
+    },
+    {
+      "labels": [],
+      "source": {
+        "file": null,
+        "line": 6
+      },
+      "text": "        call    _ZN5Catch16AssertionHandler8completeEv"
+    },
+    {
+      "labels": [],
+      "source": {
+        "file": null,
+        "line": 6
+      },
+      "text": "        lea     rdi, [rsp+112]"
+    },
+    {
+      "labels": [],
+      "source": {
+        "file": null,
+        "line": 6
+      },
+      "text": "        call    _ZN5Catch16AssertionHandlerD1Ev"
+    },
+    {
+      "labels": [],
+      "source": {
+        "file": null,
+        "line": 8
+      },
+      "text": "        add     rsp, 192"
+    },
+    {
+      "labels": [],
+      "source": {
+        "file": null,
+        "line": 8
+      },
+      "text": "        pop     rbp"
+    },
+    {
+      "labels": [],
+      "source": {
+        "file": null,
+        "line": 8
+      },
+      "text": "        ret"
+    },
+    {
+      "labels": [],
+      "source": {
+        "file": null,
+        "line": 8
+      },
+      "text": "        mov     rdi, rax"
+    },
+    {
+      "labels": [
+        {
+          "name": ".L36",
+          "range": {
+            "endCol": 21,
+            "startCol": 17
+          }
+        }
+      ],
+      "source": {
+        "file": null,
+        "line": 8
+      },
+      "text": "        jmp     .L36"
+    },
+    {
+      "labels": [
+        {
+          "name": ".L45",
+          "range": {
+            "endCol": 21,
+            "startCol": 17
+          }
+        }
+      ],
+      "source": {
+        "file": null,
+        "line": 8
+      },
+      "text": "        jmp     .L45"
+    },
+    {
+      "labels": [],
+      "source": {
+        "file": null,
+        "line": 8
+      },
+      "text": "        mov     rbp, rax"
+    },
+    {
+      "labels": [
+        {
+          "name": ".L34",
+          "range": {
+            "endCol": 21,
+            "startCol": 17
+          }
+        }
+      ],
+      "source": {
+        "file": null,
+        "line": 8
+      },
+      "text": "        jmp     .L34"
+    },
+    {
+      "labels": [],
+      "source": null,
+      "text": ""
+    },
+    {
+      "labels": [],
+      "source": null,
+      "text": "_ZL29____C_A_T_C_H____T_E_S_T____0v.cold:"
+    },
+    {
+      "labels": [],
+      "source": null,
+      "text": ".L34:"
+    },
+    {
+      "labels": [
+        {
+          "name": "_ZTVN5Catch10BinaryExprIRKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEERA17_KcEE",
+          "range": {
+            "endCol": 136,
+            "startCol": 49
+          }
+        }
+      ],
+      "source": {
+        "file": "**Scrubbed-path**",
+        "line": 65
+      },
+      "text": "        mov     QWORD PTR [rsp+64], OFFSET FLAT:_ZTVN5Catch10BinaryExprIRKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEERA17_KcEE+16"
+    },
+    {
+      "labels": [],
+      "source": {
+        "file": "**Scrubbed-path**",
+        "line": 65
+      },
+      "text": "        lea     rdi, [rsp+64]"
+    },
+    {
+      "labels": [],
+      "source": {
+        "file": "**Scrubbed-path**",
+        "line": 65
+      },
+      "text": "        call    _ZN5Catch20ITransientExpressionD2Ev"
+    },
+    {
+      "labels": [],
+      "source": {
+        "file": "**Scrubbed-path**",
+        "line": 222
+      },
+      "text": "        mov     rdi, QWORD PTR [rsp+32]"
+    },
+    {
+      "labels": [],
+      "source": {
+        "file": "**Scrubbed-path**",
+        "line": 231
+      },
+      "text": "        lea     rax, [rsp+48]"
+    },
+    {
+      "labels": [],
+      "source": {
+        "file": "**Scrubbed-path**",
+        "line": 231
+      },
+      "text": "        cmp     rdi, rax"
+    },
+    {
+      "labels": [
+        {
+          "name": ".L35",
+          "range": {
+            "endCol": 21,
+            "startCol": 17
+          }
+        }
+      ],
+      "source": {
+        "file": "**Scrubbed-path**",
+        "line": 231
+      },
+      "text": "        je      .L35"
+    },
+    {
+      "labels": [],
+      "source": {
+        "file": "**Scrubbed-path**",
+        "line": 128
+      },
+      "text": "        call    _ZdlPv"
+    },
+    {
+      "labels": [],
+      "source": null,
+      "text": ".L35:"
+    },
+    {
+      "labels": [],
+      "source": {
+        "file": "**Scrubbed-path**",
+        "line": 128
+      },
+      "text": "        mov     rdi, rbp"
+    },
+    {
+      "labels": [],
+      "source": null,
+      "text": ".L36:"
+    },
+    {
+      "labels": [],
+      "source": {
+        "file": null,
+        "line": 6
+      },
+      "text": "        call    __cxa_begin_catch"
+    },
+    {
+      "labels": [],
+      "source": {
+        "file": null,
+        "line": 6
+      },
+      "text": "        lea     rdi, [rsp+112]"
+    },
+    {
+      "labels": [],
+      "source": {
+        "file": null,
+        "line": 6
+      },
+      "text": "        call    _ZN5Catch16AssertionHandler33handleUnexpectedInflightExceptionEv"
+    },
+    {
+      "labels": [],
+      "source": {
+        "file": null,
+        "line": 6
+      },
+      "text": "        call    __cxa_end_catch"
+    },
+    {
+      "labels": [
+        {
+          "name": ".L37",
+          "range": {
+            "endCol": 21,
+            "startCol": 17
+          }
+        }
+      ],
+      "source": {
+        "file": null,
+        "line": 6
+      },
+      "text": "        jmp     .L37"
+    },
+    {
+      "labels": [],
+      "source": null,
+      "text": ".L45:"
+    },
+    {
+      "labels": [],
+      "source": {
+        "file": null,
+        "line": 6
+      },
+      "text": "        mov     rbp, rax"
+    },
+    {
+      "labels": [],
+      "source": null,
+      "text": ".L39:"
+    },
+    {
+      "labels": [],
+      "source": {
+        "file": null,
+        "line": 6
+      },
+      "text": "        lea     rdi, [rsp+112]"
+    },
+    {
+      "labels": [],
+      "source": {
+        "file": null,
+        "line": 6
+      },
+      "text": "        call    _ZN5Catch16AssertionHandlerD1Ev"
+    },
+    {
+      "labels": [],
+      "source": {
+        "file": null,
+        "line": 6
+      },
+      "text": "        mov     rdi, rbp"
+    },
+    {
+      "labels": [],
+      "source": {
+        "file": null,
+        "line": 6
+      },
+      "text": "        call    _Unwind_Resume"
+    },
+    {
+      "labels": [],
+      "source": {
+        "file": null,
+        "line": 6
+      },
+      "text": "        mov     rbp, rax"
+    },
+    {
+      "labels": [],
+      "source": {
+        "file": null,
+        "line": 6
+      },
+      "text": "        call    __cxa_end_catch"
+    },
+    {
+      "labels": [
+        {
+          "name": ".L39",
+          "range": {
+            "endCol": 21,
+            "startCol": 17
+          }
+        }
+      ],
+      "source": {
+        "file": null,
+        "line": 6
+      },
+      "text": "        jmp     .L39"
+    },
+    {
+      "labels": [],
+      "source": null,
+      "text": ""
+    },
+    {
+      "labels": [],
+      "source": null,
+      "text": ".LC9:"
+    },
+    {
+      "labels": [],
+      "source": null,
+      "text": "        .string \"Fmt test\""
+    },
+    {
+      "labels": [],
+      "source": null,
+      "text": ".LC10:"
+    },
+    {
+      "labels": [],
+      "source": null,
+      "text": "        .string \"[fmt]\""
+    },
+    {
+      "labels": [],
+      "source": null,
+      "text": ".LC11:"
+    },
+    {
+      "labels": [],
+      "source": null,
+      "text": "        .string \"\""
+    },
+    {
+      "labels": [],
+      "source": null,
+      "text": "_GLOBAL__sub_I_example.cpp:"
+    },
+    {
+      "labels": [],
+      "source": {
+        "file": null,
+        "line": 8
+      },
+      "text": "        sub     rsp, 120"
+    },
+    {
+      "labels": [
+        {
+          "name": ".LC9",
+          "range": {
+            "endCol": 38,
+            "startCol": 34
+          }
+        }
+      ],
+      "source": {
+        "file": null,
+        "line": 5
+      },
+      "text": "        mov     esi, OFFSET FLAT:.LC9"
+    },
+    {
+      "labels": [],
+      "source": {
+        "file": null,
+        "line": 5
+      },
+      "text": "        lea     rdi, [rsp+16]"
+    },
+    {
+      "labels": [],
+      "source": {
+        "file": null,
+        "line": 5
+      },
+      "text": "        call    _ZN5Catch9StringRefC1EPKc"
+    },
+    {
+      "labels": [
+        {
+          "name": ".LC10",
+          "range": {
+            "endCol": 39,
+            "startCol": 34
+          }
+        }
+      ],
+      "source": {
+        "file": null,
+        "line": 5
+      },
+      "text": "        mov     esi, OFFSET FLAT:.LC10"
+    },
+    {
+      "labels": [],
+      "source": {
+        "file": null,
+        "line": 5
+      },
+      "text": "        lea     rdi, [rsp+32]"
+    },
+    {
+      "labels": [],
+      "source": {
+        "file": null,
+        "line": 5
+      },
+      "text": "        call    _ZN5Catch9StringRefC1EPKc"
+    },
+    {
+      "labels": [],
+      "source": {
+        "file": "**Scrubbed-path**",
+        "line": 51
+      },
+      "text": "        movdqa  xmm0, XMMWORD PTR [rsp+16]"
+    },
+    {
+      "labels": [],
+      "source": {
+        "file": "**Scrubbed-path**",
+        "line": 51
+      },
+      "text": "        movdqa  xmm1, XMMWORD PTR [rsp+32]"
+    },
+    {
+      "labels": [
+        {
+          "name": "_ZL29____C_A_T_C_H____T_E_S_T____0v",
+          "range": {
+            "endCol": 69,
+            "startCol": 34
+          }
+        }
+      ],
+      "source": {
+        "file": null,
+        "line": 5
+      },
+      "text": "        mov     esi, OFFSET FLAT:_ZL29____C_A_T_C_H____T_E_S_T____0v"
+    },
+    {
+      "labels": [],
+      "source": {
+        "file": null,
+        "line": 5
+      },
+      "text": "        mov     QWORD PTR [rsp+56], 0"
+    },
+    {
+      "labels": [],
+      "source": {
+        "file": null,
+        "line": 5
+      },
+      "text": "        lea     rdi, [rsp+8]"
+    },
+    {
+      "labels": [],
+      "source": {
+        "file": "**Scrubbed-path**",
+        "line": 51
+      },
+      "text": "        movaps  XMMWORD PTR [rsp+80], xmm0"
+    },
+    {
+      "labels": [],
+      "source": {
+        "file": "**Scrubbed-path**",
+        "line": 51
+      },
+      "text": "        movaps  XMMWORD PTR [rsp+96], xmm1"
+    },
+    {
+      "labels": [
+        {
+          "name": ".LC11",
+          "range": {
+            "endCol": 54,
+            "startCol": 49
+          }
+        }
+      ],
+      "source": {
+        "file": "**Scrubbed-path**",
+        "line": 32
+      },
+      "text": "        mov     QWORD PTR [rsp+48], OFFSET FLAT:.LC11"
+    },
+    {
+      "labels": [
+        {
+          "name": ".LC2",
+          "range": {
+            "endCol": 53,
+            "startCol": 49
+          }
+        }
+      ],
+      "source": {
+        "file": "**Scrubbed-path**",
+        "line": 50
+      },
+      "text": "        mov     QWORD PTR [rsp+64], OFFSET FLAT:.LC2"
+    },
+    {
+      "labels": [],
+      "source": {
+        "file": "**Scrubbed-path**",
+        "line": 50
+      },
+      "text": "        mov     QWORD PTR [rsp+72], 5"
+    },
+    {
+      "labels": [],
+      "source": {
+        "file": null,
+        "line": 5
+      },
+      "text": "        call    _ZN5Catch15makeTestInvokerEPFvvE"
+    },
+    {
+      "labels": [],
+      "source": {
+        "file": null,
+        "line": 5
+      },
+      "text": "        mov     edi, OFFSET FLAT:_ZN12_GLOBAL__N_114autoRegistrar1E"
+    },
+    {
+      "labels": [],
+      "source": {
+        "file": null,
+        "line": 5
+      },
+      "text": "        lea     r8, [rsp+80]"
+    },
+    {
+      "labels": [],
+      "source": {
+        "file": null,
+        "line": 5
+      },
+      "text": "        lea     rcx, [rsp+48]"
+    },
+    {
+      "labels": [],
+      "source": {
+        "file": null,
+        "line": 5
+      },
+      "text": "        lea     rdx, [rsp+64]"
+    },
+    {
+      "labels": [],
+      "source": {
+        "file": null,
+        "line": 5
+      },
+      "text": "        lea     rsi, [rsp+8]"
+    },
+    {
+      "labels": [],
+      "source": {
+        "file": null,
+        "line": 5
+      },
+      "text": "        call    _ZN5Catch7AutoRegC1ESt10unique_ptrINS_12ITestInvokerESt14default_deleteIS2_EERKNS_14SourceLineInfoERKNS_9StringRefERKNS_11NameAndTagsE"
+    },
+    {
+      "labels": [],
+      "source": {
+        "file": "**Scrubbed-path**",
+        "line": 288
+      },
+      "text": "        mov     rdi, QWORD PTR [rsp+8]"
+    },
+    {
+      "labels": [],
+      "source": {
+        "file": "**Scrubbed-path**",
+        "line": 288
+      },
+      "text": "        test    rdi, rdi"
+    },
+    {
+      "labels": [
+        {
+          "name": ".L48",
+          "range": {
+            "endCol": 21,
+            "startCol": 17
+          }
+        }
+      ],
+      "source": {
+        "file": "**Scrubbed-path**",
+        "line": 288
+      },
+      "text": "        je      .L48"
+    },
+    {
+      "labels": [],
+      "source": {
+        "file": "**Scrubbed-path**",
+        "line": 81
+      },
+      "text": "        mov     rax, QWORD PTR [rdi]"
+    },
+    {
+      "labels": [],
+      "source": {
+        "file": "**Scrubbed-path**",
+        "line": 81
+      },
+      "text": "        call    [QWORD PTR [rax+16]]"
+    },
+    {
+      "labels": [],
+      "source": null,
+      "text": ".L48:"
+    },
+    {
+      "labels": [],
+      "source": {
+        "file": null,
+        "line": 8
+      },
+      "text": "        add     rsp, 120"
+    },
+    {
+      "labels": [],
+      "source": {
+        "file": null,
+        "line": 8
+      },
+      "text": "        ret"
+    },
+    {
+      "labels": [],
+      "source": null,
+      "text": "_ZTSN5Catch10BinaryExprIRKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEERA17_KcEE:"
+    },
+    {
+      "labels": [],
+      "source": null,
+      "text": "        .string \"N5Catch10BinaryExprIRKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEERA17_KcEE\""
+    },
+    {
+      "labels": [],
+      "source": null,
+      "text": "_ZTIN5Catch10BinaryExprIRKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEERA17_KcEE:"
+    },
+    {
+      "labels": [],
+      "source": null,
+      "text": "        .quad   _ZTVN10__cxxabiv120__si_class_type_infoE+16"
+    },
+    {
+      "labels": [
+        {
+          "name": "_ZTSN5Catch10BinaryExprIRKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEERA17_KcEE",
+          "range": {
+            "endCol": 104,
+            "startCol": 17
+          }
+        }
+      ],
+      "source": null,
+      "text": "        .quad   _ZTSN5Catch10BinaryExprIRKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEERA17_KcEE"
+    },
+    {
+      "labels": [],
+      "source": null,
+      "text": "        .quad   _ZTIN5Catch20ITransientExpressionE"
+    },
+    {
+      "labels": [],
+      "source": null,
+      "text": "_ZTVN5Catch10BinaryExprIRKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEERA17_KcEE:"
+    },
+    {
+      "labels": [],
+      "source": null,
+      "text": "        .quad   0"
+    },
+    {
+      "labels": [
+        {
+          "name": "_ZTIN5Catch10BinaryExprIRKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEERA17_KcEE",
+          "range": {
+            "endCol": 104,
+            "startCol": 17
+          }
+        }
+      ],
+      "source": null,
+      "text": "        .quad   _ZTIN5Catch10BinaryExprIRKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEERA17_KcEE"
+    },
+    {
+      "labels": [
+        {
+          "name": "_ZNK5Catch10BinaryExprIRKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEERA17_KcE29streamReconstructedExpressionERSo",
+          "range": {
+            "endCol": 137,
+            "startCol": 17
+          }
+        }
+      ],
+      "source": null,
+      "text": "        .quad   _ZNK5Catch10BinaryExprIRKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEERA17_KcE29streamReconstructedExpressionERSo"
+    },
+    {
+      "labels": [],
+      "source": null,
+      "text": "        .quad   _ZN5Catch10BinaryExprIRKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEERA17_KcED1Ev"
+    },
+    {
+      "labels": [
+        {
+          "name": "_ZN5Catch10BinaryExprIRKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEERA17_KcED0Ev",
+          "range": {
+            "endCol": 105,
+            "startCol": 17
+          }
+        }
+      ],
+      "source": null,
+      "text": "        .quad   _ZN5Catch10BinaryExprIRKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEERA17_KcED0Ev"
+    },
+    {
+      "labels": [],
+      "source": null,
+      "text": ".LC7:"
+    },
+    {
+      "labels": [
+        {
+          "name": ".LC5",
+          "range": {
+            "endCol": 21,
+            "startCol": 17
+          }
+        }
+      ],
+      "source": null,
+      "text": "        .quad   .LC5"
+    }
+  ],
+  "code": 0,
+  "compilationOptions": [
+    "-g",
+    "-o",
+    "**Scrubbed-path**",
+    "-masm=intel",
+    "-S",
+    "-fdiagnostics-color=always",
+    "-isystem/opt/compiler-explorer/libs/fmt/7.0.0/include",
+    "-isystem/opt/compiler-explorer/libs/catch2/v3.0.0-preview2/src",
+    "-O3",
+    "-lCatch2Main",
+    "**Scrubbed-path**"
+  ],
+  "execResult": {
+    "buildResult": {
+      "code": 0,
+      "compilationOptions": [
+        "-g",
+        "-o",
+        "**Scrubbed-path**",
+        "-fdiagnostics-color=always",
+        "-isystem/opt/compiler-explorer/libs/fmt/7.0.0/include",
+        "-isystem/opt/compiler-explorer/libs/catch2/v3.0.0-preview2/src",
+        "-L.",
+        "-Wl,-rpath,.",
+        "-Wl,-rpath,**Scrubbed-path**",
+        "-Wl,-rpath,**Scrubbed-path**",
+        "-Wl,-rpath,**Scrubbed-path**",
+        "-O3",
+        "-lCatch2Main",
+        "**Scrubbed-path**",
+        "-lfmtd",
+        "-lCatch2"
+      ],
+      "dirPath": "**Scrubbed-path**",
+      "executableFilename": "**Scrubbed-path**",
+      "inputFilename": "**Scrubbed-path**",
+      "okToCache": true,
+      "stderr": [],
+      "stdout": []
+    },
+    "code": 0,
+    "didExecute": true,
+    "okToCache": true,
+    "stderr": [],
+    "stdout": [
+      {
+        "text": "==============================================================================="
+      },
+      {
+        "text": "All tests passed (1 assertion in 1 test case)"
+      },
+      {
+        "text": ""
+      }
+    ]
+  },
+  "inputFilename": "**Scrubbed-path**",
+  "labelDefinitions": {
+    ".L10": 42,
+    ".L11": 52,
+    ".L13": 119,
+    ".L14": 124,
+    ".L15": 68,
+    ".L17": 127,
+    ".L18": 132,
+    ".L19": 134,
+    ".L20": 140,
+    ".L27": 106,
+    ".L28": 89,
+    ".L29": 109,
+    ".L30": 150,
+    ".L34": 229,
+    ".L35": 238,
+    ".L36": 240,
+    ".L37": 214,
+    ".L39": 248,
+    ".L45": 246,
+    ".L48": 293,
+    ".L5": 74,
+    ".L8": 99,
+    ".L9": 83,
+    ".LC0": 13,
+    ".LC1": 152,
+    ".LC10": 259,
+    ".LC11": 261,
+    ".LC2": 154,
+    ".LC3": 156,
+    ".LC4": 158,
+    ".LC5": 160,
+    ".LC6": 162,
+    ".LC7": 308,
+    ".LC9": 257,
+    "_GLOBAL__sub_I_example.cpp": 263,
+    "_ZL29____C_A_T_C_H____T_E_S_T____0v": 164,
+    "_ZL29____C_A_T_C_H____T_E_S_T____0v.cold": 228,
+    "_ZN5Catch10BinaryExprIRKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEERA17_KcED0Ev": 4,
+    "_ZN5Catch10BinaryExprIRKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEERA17_KcED2Ev": 1,
+    "_ZN5Catch16AssertionHandlerD2Ev": 143,
+    "_ZNK5Catch10BinaryExprIRKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEERA17_KcE29streamReconstructedExpressionERSo": 15,
+    "_ZTIN5Catch10BinaryExprIRKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEERA17_KcEE": 298,
+    "_ZTSN5Catch10BinaryExprIRKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEERA17_KcEE": 296,
+    "_ZTVN5Catch10BinaryExprIRKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEERA17_KcEE": 302
+  },
+  "okToCache": true,
+  "stderr": [],
+  "stdout": [],
+  "tools": []
+}

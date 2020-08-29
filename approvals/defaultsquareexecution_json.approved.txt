@@ -194,7 +194,6 @@
       "text": "        jmp     __cxa_atexit"
     }
   ],
-  "asmSize": 390688,
   "code": 0,
   "compilationOptions": [
     "-g",
@@ -217,9 +216,9 @@
         "-fdiagnostics-color=always",
         "-L.",
         "-Wl,-rpath,.",
-        -Wl,-rpath,**Scrubbed-path**,
-        -Wl,-rpath,**Scrubbed-path**,
-        -Wl,-rpath,**Scrubbed-path**,
+        "-Wl,-rpath,**Scrubbed-path**",
+        "-Wl,-rpath,**Scrubbed-path**",
+        "-Wl,-rpath,**Scrubbed-path**",
         "-O3",
         "-std=c++2a",
         "**Scrubbed-path**"

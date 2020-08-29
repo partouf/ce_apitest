@@ -1,0 +1,36 @@
+{
+  "asm": [],
+  "buildResult": {
+    "asm": [
+      {
+        "text": "# Compilation provided by Compiler Explorer at https://godbolt.org/"
+      },
+      {
+        "text": "<Compilation failed>"
+      }
+    ],
+    "code": 1,
+    "stderr": [
+      {
+        "text": "\u001b[01m\u001b[K<source>:1:10:\u001b[m\u001b[K \u001b[01;31m\u001b[Kfatal error: \u001b[m\u001b[Kcatch2/catch_test_macros.hpp: No such file or directory"
+      },
+      {
+        "text": "    1 | #include \u001b[01;31m\u001b[K<catch2/catch_test_macros.hpp>\u001b[m\u001b[K"
+      },
+      {
+        "text": "      |          \u001b[01;31m\u001b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\u001b[m\u001b[K"
+      },
+      {
+        "text": "compilation terminated."
+      },
+      {
+        "text": ""
+      }
+    ],
+    "stdout": []
+  },
+  "code": 0,
+  "didExecute": false,
+  "stderr": [],
+  "stdout": []
+}
