@@ -2,7 +2,7 @@
 import { expect } from 'chai';
 import 'mocha';
 import { ICompilerFilters, ICompilationResult } from '@partouf/compilerexplorer-api';
-import { TrippleCompilationResult, doCompilation, findOrCreateCompilationByName, getJsonCompiler, getConfig, pathScrubber, asmSizeScrubber } from '../utils/utils';
+import { TrippleCompilationResult, doCompilation, findOrCreateCompilationByName, getCompiler, getConfig, pathScrubber, asmSizeScrubber } from '../utils/utils';
 import path from 'path';
 
 const approvals = require('approvals');
@@ -133,7 +133,7 @@ function testCompilationSuccess(result: ICompilationResult) {
 describe('Api initialization', () => {
     it('Should have a compiler', async () => {
         const config = getConfig();
-        const compiler = await getJsonCompiler();
+        const compiler = await getCompiler();
         expect(compiler.id).equal(config.defaultCompilerId);
         expect(compiler.supportsExecution()).true;
     });

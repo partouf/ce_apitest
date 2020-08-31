@@ -12,9 +12,7 @@ export function asmSizeScrubber(data: string) {
 };
 
 export class TestConfig {
-    public jsonApi?: Api;
-    public textApi?: Api;
-    public formApi?: Api;
+    public api?: Api;
     public defaultCompilerId: string = 'g91';
 }
 
@@ -65,71 +63,40 @@ function initApis() {
         config.defaultCompilerId = process.env.DEFCOMPILERID;
     }
 
-    if (!config.jsonApi) {
-        config.jsonApi = new Api({
+    if (!config.api) {
+        config.api = new Api({
             url: process.env.CEURL,
             defaultLanguage: 'c++',
             apiType: APIType.JSON,
         });
     }
-
-    if (!config.textApi) {
-        config.textApi = new Api({
-            url: process.env.CEURL,
-            defaultLanguage: 'c++',
-            apiType: APIType.Text,
-        });
-    }
-
-    if (!config.formApi) {
-        config.formApi = new Api({
-            url: process.env.CEURL,
-            defaultLanguage: 'c++',
-            apiType: APIType.Form,
-        });
-    }
 }
 
-export async function getJsonCompiler(): Promise<ICompiler> {
+export async function getCompiler(): Promise<ICompiler> {
     initApis();
 
-    if (!config.jsonApi) throw 'Something went wrong with the jsonApi';
+    if (!config.api) throw 'Something went wrong with the jsonApi';
 
-    return await config.jsonApi.compilers.findById(config.defaultCompilerId);
-}
-
-export async function getTextCompiler(): Promise<ICompiler> {
-    initApis();
-
-    if (!config.textApi) throw 'Something went wrong with the textApi';
-
-    return await config.textApi.compilers.findById(config.defaultCompilerId);
-}
-
-export async function getFormCompiler(): Promise<ICompiler> {
-    initApis();
-
-    if (!config.formApi) throw 'Something went wrong with the formApi';
-
-    return await config.formApi.compilers.findById(config.defaultCompilerId);
+    return await config.api.compilers.findById(config.defaultCompilerId);
 }
 
 export async function doCompilation(source: string,  filters: ICompilerFilters, compilerArguments: Array<string> = [], libraries: Array<ILibrary> = []): Promise<TrippleCompilationResult> {
     initApis();
 
-    let formResult: any = undefined;
+    const compiler = await getCompiler();
 
-    const jsonCompiler = await getJsonCompiler();
-    const textCompiler = await getTextCompiler();
+    compiler.apiOptions.apiType = APIType.Form;
+    const formResult = await compiler.compile(source, compilerArguments, undefined, filters, libraries, undefined);
 
-    if (config.formApi) {
-        const formCompiler = await getFormCompiler();
-        formResult = await formCompiler.compile(source, compilerArguments, undefined, filters, libraries, undefined);
-    }
+    compiler.apiOptions.apiType = APIType.Text;
+    const textResult = await compiler.compile(source, compilerArguments, undefined, filters, libraries, undefined);
+
+    compiler.apiOptions.apiType = APIType.JSON;
+    const jsonResult = await compiler.compile(source, compilerArguments, undefined, filters, libraries, undefined);
 
     const result = new TrippleCompilationResult(
-        await jsonCompiler.compile(source, compilerArguments, undefined, filters, libraries, undefined),
-        await textCompiler.compile(source, compilerArguments, undefined, filters, libraries, undefined),
+        jsonResult,
+        textResult,
         formResult
     );
 
