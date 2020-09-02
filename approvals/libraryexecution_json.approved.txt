@@ -1242,17 +1242,9 @@
       "text": "        cmp     BYTE PTR [rdi+58], 0"
     },
     {
-      "labels": [],
-      "source": {
-        "file": "**Scrubbed-path**",
-        "line": 40
-      },
-      "text": "        mov     rsi, rdi"
-    },
-    {
       "labels": [
         {
-          "name": ".L30",
+          "name": ".L33",
           "range": {
             "endCol": 21,
             "startCol": 17
@@ -1263,7 +1255,23 @@
         "file": "**Scrubbed-path**",
         "line": 41
       },
-      "text": "        jne     .L30"
+      "text": "        jne     .L33"
+    },
+    {
+      "labels": [],
+      "source": {
+        "file": "**Scrubbed-path**",
+        "line": 40
+      },
+      "text": "        sub     rsp, 8"
+    },
+    {
+      "labels": [],
+      "source": {
+        "file": "**Scrubbed-path**",
+        "line": 40
+      },
+      "text": "        mov     rsi, rdi"
     },
     {
       "labels": [],
@@ -1287,12 +1295,28 @@
         "file": "**Scrubbed-path**",
         "line": 42
       },
-      "text": "        jmp     [QWORD PTR [rax+144]]"
+      "text": "        call    [QWORD PTR [rax+144]]"
+    },
+    {
+      "labels": [],
+      "source": {
+        "file": "**Scrubbed-path**",
+        "line": 44
+      },
+      "text": "        add     rsp, 8"
+    },
+    {
+      "labels": [],
+      "source": {
+        "file": "**Scrubbed-path**",
+        "line": 44
+      },
+      "text": "        ret"
     },
     {
       "labels": [],
       "source": null,
-      "text": ".L30:"
+      "text": ".L33:"
     },
     {
       "labels": [],
@@ -1810,7 +1834,7 @@
     {
       "labels": [
         {
-          "name": ".L37",
+          "name": ".L41",
           "range": {
             "endCol": 21,
             "startCol": 17
@@ -1821,7 +1845,7 @@
         "file": "**Scrubbed-path**",
         "line": 231
       },
-      "text": "        je      .L37"
+      "text": "        je      .L41"
     },
     {
       "labels": [],
@@ -1834,7 +1858,7 @@
     {
       "labels": [],
       "source": null,
-      "text": ".L37:"
+      "text": ".L41:"
     },
     {
       "labels": [],
@@ -1903,7 +1927,7 @@
     {
       "labels": [
         {
-          "name": ".L36",
+          "name": ".L40",
           "range": {
             "endCol": 21,
             "startCol": 17
@@ -1914,12 +1938,12 @@
         "file": null,
         "line": 8
       },
-      "text": "        jmp     .L36"
+      "text": "        jmp     .L40"
     },
     {
       "labels": [
         {
-          "name": ".L45",
+          "name": ".L49",
           "range": {
             "endCol": 21,
             "startCol": 17
@@ -1930,7 +1954,7 @@
         "file": null,
         "line": 8
       },
-      "text": "        jmp     .L45"
+      "text": "        jmp     .L49"
     },
     {
       "labels": [],
@@ -1943,7 +1967,7 @@
     {
       "labels": [
         {
-          "name": ".L34",
+          "name": ".L38",
           "range": {
             "endCol": 21,
             "startCol": 17
@@ -1954,7 +1978,7 @@
         "file": null,
         "line": 8
       },
-      "text": "        jmp     .L34"
+      "text": "        jmp     .L38"
     },
     {
       "labels": [],
@@ -1969,7 +1993,7 @@
     {
       "labels": [],
       "source": null,
-      "text": ".L34:"
+      "text": ".L38:"
     },
     {
       "labels": [
@@ -2030,7 +2054,7 @@
     {
       "labels": [
         {
-          "name": ".L35",
+          "name": ".L39",
           "range": {
             "endCol": 21,
             "startCol": 17
@@ -2041,7 +2065,7 @@
         "file": "**Scrubbed-path**",
         "line": 231
       },
-      "text": "        je      .L35"
+      "text": "        je      .L39"
     },
     {
       "labels": [],
@@ -2054,7 +2078,7 @@
     {
       "labels": [],
       "source": null,
-      "text": ".L35:"
+      "text": ".L39:"
     },
     {
       "labels": [],
@@ -2067,7 +2091,7 @@
     {
       "labels": [],
       "source": null,
-      "text": ".L36:"
+      "text": ".L40:"
     },
     {
       "labels": [],
@@ -2104,7 +2128,7 @@
     {
       "labels": [
         {
-          "name": ".L37",
+          "name": ".L41",
           "range": {
             "endCol": 21,
             "startCol": 17
@@ -2115,12 +2139,12 @@
         "file": null,
         "line": 6
       },
-      "text": "        jmp     .L37"
+      "text": "        jmp     .L41"
     },
     {
       "labels": [],
       "source": null,
-      "text": ".L45:"
+      "text": ".L49:"
     },
     {
       "labels": [],
@@ -2133,7 +2157,7 @@
     {
       "labels": [],
       "source": null,
-      "text": ".L39:"
+      "text": ".L43:"
     },
     {
       "labels": [],
@@ -2186,7 +2210,7 @@
     {
       "labels": [
         {
-          "name": ".L39",
+          "name": ".L43",
           "range": {
             "endCol": 21,
             "startCol": 17
@@ -2197,7 +2221,7 @@
         "file": null,
         "line": 6
       },
-      "text": "        jmp     .L39"
+      "text": "        jmp     .L43"
     },
     {
       "labels": [],
@@ -2475,7 +2499,7 @@
       "labels": [],
       "source": {
         "file": "**Scrubbed-path**",
-        "line": 288
+        "line": 283
       },
       "text": "        mov     rdi, QWORD PTR [rsp+8]"
     },
@@ -2483,14 +2507,14 @@
       "labels": [],
       "source": {
         "file": "**Scrubbed-path**",
-        "line": 288
+        "line": 283
       },
       "text": "        test    rdi, rdi"
     },
     {
       "labels": [
         {
-          "name": ".L48",
+          "name": ".L52",
           "range": {
             "endCol": 21,
             "startCol": 17
@@ -2499,9 +2523,9 @@
       ],
       "source": {
         "file": "**Scrubbed-path**",
-        "line": 288
+        "line": 283
       },
-      "text": "        je      .L48"
+      "text": "        je      .L52"
     },
     {
       "labels": [],
@@ -2522,7 +2546,7 @@
     {
       "labels": [],
       "source": null,
-      "text": ".L48:"
+      "text": ".L52:"
     },
     {
       "labels": [],
@@ -2686,7 +2710,6 @@
         "-lfmtd",
         "-lCatch2"
       ],
-      "dirPath": "**Scrubbed-path**",
       "executableFilename": "**Scrubbed-path**",
       "inputFilename": "**Scrubbed-path**",
       "okToCache": true,
@@ -2723,38 +2746,38 @@
     ".L27": 106,
     ".L28": 89,
     ".L29": 109,
-    ".L30": 150,
-    ".L34": 229,
-    ".L35": 238,
-    ".L36": 240,
-    ".L37": 214,
-    ".L39": 248,
-    ".L45": 246,
-    ".L48": 293,
+    ".L33": 153,
+    ".L38": 232,
+    ".L39": 241,
+    ".L40": 243,
+    ".L41": 217,
+    ".L43": 251,
+    ".L49": 249,
     ".L5": 74,
+    ".L52": 296,
     ".L8": 99,
     ".L9": 83,
     ".LC0": 13,
-    ".LC1": 152,
-    ".LC10": 259,
-    ".LC11": 261,
-    ".LC2": 154,
-    ".LC3": 156,
-    ".LC4": 158,
-    ".LC5": 160,
-    ".LC6": 162,
-    ".LC7": 308,
-    ".LC9": 257,
-    "_GLOBAL__sub_I_example.cpp": 263,
-    "_ZL29____C_A_T_C_H____T_E_S_T____0v": 164,
-    "_ZL29____C_A_T_C_H____T_E_S_T____0v.cold": 228,
+    ".LC1": 155,
+    ".LC10": 262,
+    ".LC11": 264,
+    ".LC2": 157,
+    ".LC3": 159,
+    ".LC4": 161,
+    ".LC5": 163,
+    ".LC6": 165,
+    ".LC7": 311,
+    ".LC9": 260,
+    "_GLOBAL__sub_I_example.cpp": 266,
+    "_ZL29____C_A_T_C_H____T_E_S_T____0v": 167,
+    "_ZL29____C_A_T_C_H____T_E_S_T____0v.cold": 231,
     "_ZN5Catch10BinaryExprIRKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEERA17_KcED0Ev": 4,
     "_ZN5Catch10BinaryExprIRKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEERA17_KcED2Ev": 1,
     "_ZN5Catch16AssertionHandlerD2Ev": 143,
     "_ZNK5Catch10BinaryExprIRKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEERA17_KcE29streamReconstructedExpressionERSo": 15,
-    "_ZTIN5Catch10BinaryExprIRKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEERA17_KcEE": 298,
-    "_ZTSN5Catch10BinaryExprIRKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEERA17_KcEE": 296,
-    "_ZTVN5Catch10BinaryExprIRKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEERA17_KcEE": 302
+    "_ZTIN5Catch10BinaryExprIRKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEERA17_KcEE": 301,
+    "_ZTSN5Catch10BinaryExprIRKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEERA17_KcEE": 299,
+    "_ZTVN5Catch10BinaryExprIRKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEERA17_KcEE": 305
   },
   "okToCache": true,
   "stderr": [],

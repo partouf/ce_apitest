@@ -13,7 +13,7 @@ export function asmSizeScrubber(data: string) {
 
 export class TestConfig {
     public api?: Api;
-    public defaultCompilerId: string = 'g91';
+    public defaultCompilerId: string = 'g92';
 }
 
 export class TrippleCompilationResult {
