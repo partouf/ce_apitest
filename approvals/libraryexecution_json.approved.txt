@@ -2710,7 +2710,6 @@
         "-lfmtd",
         "-lCatch2"
       ],
-      "dirPath": "**Scrubbed-path**",
       "executableFilename": "**Scrubbed-path**",
       "inputFilename": "**Scrubbed-path**",
       "okToCache": true,

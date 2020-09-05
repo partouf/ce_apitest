@@ -223,7 +223,6 @@
         "-std=c++2a",
         "**Scrubbed-path**"
       ],
-      "dirPath": "**Scrubbed-path**",
       "executableFilename": "**Scrubbed-path**",
       "inputFilename": "**Scrubbed-path**",
       "okToCache": true,
