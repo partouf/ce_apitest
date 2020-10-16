@@ -1344,7 +1344,7 @@
     {
       "labels": [],
       "source": null,
-      "text": "        .string \"**Scrubbed-path**"
+      "text": "        .string \"./example.cpp\""
     },
     {
       "labels": [],
