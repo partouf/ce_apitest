@@ -2,7 +2,6 @@ import { Api, ICompilationResult, APIType, ILibrary, ICompiler, ICompilerFilters
 
 export function pathScrubber(data: string) {
     return (data || '').
-        replace(/\s*\"dirPath\"\:\s\".*\",/g, '').
         replace(/\"\.?\/.*\/.*\"/g, '"**Scrubbed-path**"').
         replace(/\"-Wl,-rpath,\/.*\"/g, '"-Wl,-rpath,**Scrubbed-path**"');
 };
