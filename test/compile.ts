@@ -2,7 +2,7 @@
 import { expect } from 'chai';
 import 'mocha';
 import { ICompilerFilters, ICompilationResult } from '@partouf/compilerexplorer-api';
-import { TrippleCompilationResult, doCompilation, findOrCreateCompilationByName, getCompiler, getConfig, pathScrubber, asmSizeScrubber } from '../utils/utils';
+import { TrippleCompilationResult, doCompilation, findOrCreateCompilationByName, getCompiler, getConfig, pathScrubber, asmSizeScrubber, timeScrubber, filtcountScrubber, cacheScrubber } from '../utils/utils';
 import path from 'path';
 
 const approvals = require('approvals');
@@ -11,7 +11,10 @@ const approvalsPath = path.join(__dirname, '../../approvals');
 
 const CEScrubbers = approvals.scrubbers.multiScrubber([
     pathScrubber,
-    asmSizeScrubber
+    asmSizeScrubber,
+    timeScrubber,
+    filtcountScrubber,
+    cacheScrubber
 ]);
 
 async function getDefaultSquareCompilation(): Promise<TrippleCompilationResult> {

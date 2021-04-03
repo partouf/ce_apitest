@@ -7,6 +7,21 @@ export function pathScrubber(data: string) {
         replace(/\"-Wl,-rpath,\/.*\"/g, '"-Wl,-rpath,**Scrubbed-path**"');
 };
 
+export function timeScrubber(data: string) {
+    return (data || '').
+        replace(/\s*\"[a-z]*time\"\:\s\"\d*\",/gi, '');
+}
+
+export function cacheScrubber(data: string) {
+    return (data || '').
+        replace(/\s*\"retreivedFromCache\"\:\s[truefals]*,/gi, '');
+}
+
+export function filtcountScrubber(data: string) {
+    return (data || '').
+        replace(/\s*\"filteredCount\"\:\s\d*,/gi, '');
+}
+
 export function asmSizeScrubber(data: string) {
     return (data || '').
         replace(/\s*\"asmSize\"\:\s\d*,/g, '');
